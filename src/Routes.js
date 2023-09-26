@@ -9,8 +9,11 @@ import {
 } from './layouts';
 
 // Landing pages
+import { Home as HomeView } from './views/pages';
+
+// Landing pages
 import {
-  Home as HomeView,
+  // Home as HomeView,
   Advertisement as AdvertisementView,
   PaymentApp as PaymentAppView,
   Marketing as MarketingView,
@@ -66,6 +69,7 @@ import {
   Illustrations as IllustrationsView,
   ChangeLog as ChangeLogView,
 } from './views/docs';
+
 const Routes = () => {
   return (
     <ReactRoutes>
