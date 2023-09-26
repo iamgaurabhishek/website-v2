@@ -136,7 +136,7 @@ const Process = ({ themeMode = 'light' }) => {
                 />
               </svg>
             ),
-            color: colors.green,
+            color: colors.orange,
           },
         ].map((item, i) => (
           <Grid item xs={12} md={4} key={i}>

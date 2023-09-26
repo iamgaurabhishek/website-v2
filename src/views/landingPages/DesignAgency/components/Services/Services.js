@@ -123,7 +123,7 @@ const Services = ({ themeMode = 'light' }) => {
                   />
                 </svg>
               ),
-              color: colors.green,
+              color: colors.orange,
             },
             {
               title: 'Brand Design',

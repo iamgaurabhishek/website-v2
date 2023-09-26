@@ -4,18 +4,18 @@ import { light as lightIndigo, dark as darkIndigo } from './palette--indigo';
 import { light as lightPink, dark as darkPink } from './palette--pink';
 import { light as lightOrange, dark as darkOrange } from './palette--orange';
 
-const palette = (themeMode = 'dark', paletteType = 'orange') => {
+const palette = (themeMode = 'light', paletteType = 'orange') => {
   if (paletteType === 'blue') {
     return themeMode === 'dark' ? darkBlue : lightBlue;
   } else if (paletteType === 'indigo') {
     return themeMode === 'dark' ? darkIndigo : lightIndigo;
   } else if (paletteType === 'pink') {
     return themeMode === 'dark' ? darkPink : lightPink;
-  } else if (paletteType === 'orange') {
-    return themeMode === 'dark' ? darkOrange : lightOrange;
+  } else if (paletteType === 'green') {
+    return themeMode === 'dark' ? darkGreen : lightGreen;
   }
 
-  return themeMode === 'dark' ? darkGreen : lightGreen;
+  return themeMode === 'dark' ? darkOrange : lightOrange;
 };
 
 export default palette;

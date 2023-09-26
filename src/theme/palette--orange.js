@@ -1,3 +1,6 @@
+// Main Orange: eb741d
+// Rollover Orange: a062ca
+
 export const light = {
   alternate: {
     main: '#f7f9fc',
@@ -6,9 +9,9 @@ export const light = {
   cardShadow: 'rgba(23, 70, 161, .11)',
   mode: 'light',
   primary: {
-    main: '#f57c00',
+    main: '#eb741d',
     light: '#ff9800',
-    dark: '#e65100',
+    dark: '#d26a1e',
     contrastText: '#fff',
   },
   secondary: {
@@ -42,9 +45,9 @@ export const dark = {
   },
   mode: 'dark',
   primary: {
-    main: '#f57c00',
+    main: '#eb741d',
     light: '#ff9800',
-    dark: '#e65100',
+    dark: '#d26a1e',
     contrastText: '#fff',
   },
   secondary: {

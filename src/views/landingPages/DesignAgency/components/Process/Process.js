@@ -132,7 +132,7 @@ const Process = ({ themeMode = 'light' }) => {
                   />
                 </svg>
               ),
-              color: colors.green,
+              color: colors.orange,
             },
           ].map((item, i) => (
             <Box padding={{ xs: 1, sm: 2 }} key={i}>
