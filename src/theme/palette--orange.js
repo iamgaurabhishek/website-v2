@@ -1,5 +1,7 @@
-// Main Orange: eb741d
-// Rollover Orange: a062ca
+// Primary Orange: eb741d
+// Rollover Orange: d26a1e
+// Secondary Red: eb062c
+// Rollover Red: d8082b
 
 export const light = {
   alternate: {
@@ -15,9 +17,9 @@ export const light = {
     contrastText: '#fff',
   },
   secondary: {
-    main: '#00AB55',
+    main: '#eb062c',
     light: '#33CC70',
-    dark: '#009357',
+    dark: '#d8082b',
     contrastText: '#fff',
   },
   text: {
@@ -51,9 +53,9 @@ export const dark = {
     contrastText: '#fff',
   },
   secondary: {
-    main: '#00AB55',
+    main: '#eb062c',
     light: '#33CC70',
-    dark: '#009357',
+    dark: '#d8082b',
     contrastText: '#fff',
   },
   text: {

@@ -26,15 +26,12 @@ const Hero = () => {
                 fontWeight: 700,
               }}
             >
-              Turn your ideas
-              <br />
-              into a{' '}
               <Typography
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
               >
-                success.
+                BrickMMO
               </Typography>
             </Typography>
           </Box>
@@ -45,8 +42,9 @@ const Hero = () => {
               color="textSecondary"
               sx={{ fontWeight: 400 }}
             >
-              Webbee will make your product look modern and professional while
-              saving you precious time.
+              A Smart City Development Platform
+              <br />
+              Built Using LEGO <sup>&reg;</sup> Bricks
             </Typography>
           </Box>
           <Box
@@ -57,13 +55,12 @@ const Hero = () => {
             <Button
               component={'a'}
               variant="contained"
-              color="primary"
+              color="secondary"
               size="large"
               fullWidth={isMd ? false : true}
-              href={'https://material-ui.com/store/items/webbee-landing-page/'}
-              target={'_blank'}
+              href={'/get-started'}
             >
-              Purchase now
+              Get Started
             </Button>
             <Box
               marginTop={{ xs: 2, sm: 0 }}
@@ -72,13 +69,13 @@ const Hero = () => {
             >
               <Button
                 component={'a'}
-                href={'/docs-introduction'}
-                variant="outlined"
-                color="primary"
+                href={'/documentation'}
+                variant="contained"
+                color="secondary"
                 size="large"
                 fullWidth={isMd ? false : true}
               >
-                View documentation
+                Documentation
               </Button>
             </Box>
           </Box>
