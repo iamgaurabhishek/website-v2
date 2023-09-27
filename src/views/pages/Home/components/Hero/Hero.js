@@ -18,7 +18,7 @@ const Hero = () => {
     <Grid container spacing={4}>
       <Grid item container alignItems={'center'} xs={12} md={6}>
         <Box>
-          <Box marginBottom={2}>
+          <Box marginBottom={1}>
             <Typography
               variant="h2"
               color="textPrimary"
@@ -26,12 +26,21 @@ const Hero = () => {
                 fontWeight: 700,
               }}
             >
+              BrickMMO
+            </Typography>
+            <Typography
+              variant="h4"
+              color="textPrimary"
+              sx={{
+                fontWeight: 600,
+              }}
+            >
               <Typography
                 color={'primary'}
                 component={'span'}
                 variant={'inherit'}
               >
-                BrickMMO
+                A Smart City Development Platform.
               </Typography>
             </Typography>
           </Box>
@@ -42,9 +51,7 @@ const Hero = () => {
               color="textSecondary"
               sx={{ fontWeight: 400 }}
             >
-              A Smart City Development Platform
-              <br />
-              Built Using LEGO <sup>&reg;</sup> Bricks
+              100% built with only using LEGO<sup>&reg;</sup> bricks.
             </Typography>
           </Box>
           <Box
