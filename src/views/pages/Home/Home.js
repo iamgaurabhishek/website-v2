@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
-import { DemoPages, Features, Footer, Hero, Highlights } from './components';
+import { Rules, Features, Partnership, Hero, Highlights } from './components';
 
 const Home = () => {
   const theme = useTheme();
@@ -20,12 +20,12 @@ const Home = () => {
         <Features />
       </Container>
       <Box bgcolor={theme.palette.alternate.main}>
-        <Container>
-          <DemoPages />
+        <Container maxWidth={800}>
+          <Rules />
         </Container>
       </Box>
       <Container>
-        <Footer />
+        <Partnership />
       </Container>
     </Box>
   );

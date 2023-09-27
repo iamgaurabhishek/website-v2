@@ -4,6 +4,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import RocketIllustration from 'svg/illustrations/Rocket';
@@ -44,14 +45,28 @@ const Hero = () => {
               </Typography>
             </Typography>
           </Box>
-          <Box marginBottom={3}>
+          <Box marginBottom={0}>
             <Typography
               variant="h6"
               component="p"
               color="textSecondary"
               sx={{ fontWeight: 400 }}
             >
-              100% built with only using LEGO<sup>&reg;</sup> bricks.
+              Built with only using LEGO<sup>&reg;</sup> bricks.
+            </Typography>
+          </Box>
+          <Box marginBottom={3}>
+            <Typography
+              component="p"
+              variant={'caption'}
+              color="textSecondary"
+              sx={{ fontWeight: 400 }}
+            >
+              View the{' '}
+              <Link component="a" href="/rules-exceptions" underline="none">
+                Rules of BrickMMO and Exceptions
+              </Link>
+              .
             </Typography>
           </Box>
           <Box

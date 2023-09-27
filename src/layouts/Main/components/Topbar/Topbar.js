@@ -164,7 +164,7 @@ const Topbar = ({
             <Link
               underline="none"
               component="a"
-              href="/systems"
+              href="/commissions"
               color="textPrimary"
             >
               Commissions
