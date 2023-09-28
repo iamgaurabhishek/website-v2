@@ -23,14 +23,14 @@ const Counter = () => {
             {
               title: 9,
               label: 'Paid Positions',
-              subtitle: '9+ paid part time jobs for students created.',
+              subtitle: '9+ paid part time jobs created for students.',
               suffix: '+',
             },
             {
-              title: 50,
-              label: 'BrickMMO Projects',
-              subtitle: '50+ ongoing BrickMMO projects and systems.',
-              suffix: '+',
+              title: 70,
+              label: 'Student Contribution',
+              subtitle: '70% of BrickMMO code was written by students.',
+              suffix: '%',
             },
             {
               title: 3000,
@@ -40,7 +40,12 @@ const Counter = () => {
             },
           ].map((item, i) => (
             <Grid key={i} item xs={12} md={4}>
-              <Typography variant="h3" align={'center'} gutterBottom>
+              <Typography
+                variant="h3"
+                align={'center'}
+                gutterBottom
+                color={'primary'}
+              >
                 <Box fontWeight={600}>
                   <VisibilitySensor
                     onChange={(isVisible) => setViewPortVisibility(isVisible)}
