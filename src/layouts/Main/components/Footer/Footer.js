@@ -3,6 +3,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
 
 import { useTheme } from '@mui/material/styles';
 
@@ -31,35 +32,35 @@ const Footer = () => {
           flexDirection={{ xs: 'column', sm: 'row' }}
         >
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
-            <Box
+            <IconButton
               component={'a'}
               href="https://www.instagram.com/brickmo_com"
               marginRight={1}
             >
               <InstagramIcon color="primary" />
-            </Box>
-            <Box
+            </IconButton>
+            <IconButton
               component={'a'}
               href="https://www.instagram.com/brickmo_com"
               marginRight={1}
             >
               <YouTubeIcon color="primary" />
-            </Box>
-            <Box
+            </IconButton>
+            <IconButton
               component={'a'}
               href="https://twitter.com/brickmmo"
               marginRight={1}
             >
               <TwitterIcon color="primary" />
-            </Box>
-            <Box
+            </IconButton>
+            <IconButton
               component={'a'}
               href="https://github.com/BrickMMO"
               marginRight={1}
             >
               <GitHubIcon color="primary" />
-            </Box>
-            <Box
+            </IconButton>
+            <IconButton
               component={'a'}
               href="https://www.tiktok.com/@brickmmo"
               marginRight={1}
@@ -69,7 +70,7 @@ const Footer = () => {
                 width={'24px'}
                 color={theme.palette.primary.main}
               />
-            </Box>
+            </IconButton>
           </Box>
 
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>

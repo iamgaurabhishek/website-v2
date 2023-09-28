@@ -9,18 +9,17 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
-// import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
-import SystemImage from './images/systems.png';
+// import SystemImage from '../../../../../images/systems.png';
 
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import SatelliteAltIcon from '@mui/icons-material/SatelliteAlt';
 import RadioIcon from '@mui/icons-material/Radio';
 
-const Features = () => {
+const Systems = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Box marginBottom={4}>
+      <Box marginBottom={0}>
         <Typography
           sx={{
             textTransform: 'uppercase',
@@ -48,10 +47,10 @@ const Features = () => {
         display={'flex'}
         justifyContent={'center'}
         alignItems={'center'}
-        marginBottom={4}
+        marginBottom={0}
       >
         <Box height={'100%'} width={'100%'} maxWidth={500}>
-          <img src={SystemImage} height={'100%'} width={'100%'} />
+          <img src="/images/systems.png" height={'100%'} width={'100%'} />
         </Box>
       </Box>
       <Box marginBottom={4}>
@@ -138,7 +137,7 @@ const Features = () => {
       <Box marginTop={3} display={'flex'} justifyContent={'center'}>
         <Link
           component={'a'}
-          href={'/contact'}
+          href={'/systems'}
           color="primary"
           size="large"
           margin
@@ -159,7 +158,7 @@ const Features = () => {
           <Box marginRight={2}>
             <Button
               component={'a'}
-              href={'/contact'}
+              href={'/systems-suggest'}
               variant="contained"
               color="secondary"
               size="large"
@@ -171,7 +170,7 @@ const Features = () => {
           <Box>
             <Button
               component={'a'}
-              href={'/contact'}
+              href={'/systems-build'}
               variant="outlined"
               color="secondary"
               size="large"
@@ -185,4 +184,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Systems;

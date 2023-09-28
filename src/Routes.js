@@ -9,7 +9,7 @@ import {
 } from './layouts';
 
 // Landing pages
-import { Home as HomeView } from './views/pages';
+import { Home as HomeView, Systems as SystemsView } from './views/pages';
 
 // Landing pages
 import {
@@ -84,6 +84,18 @@ const Routes = () => {
           />
         ))()}
       />
+      <Route
+        exact
+        path="/systems"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={SystemsView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+
       <Route
         exact
         path="/landing-advertisement"

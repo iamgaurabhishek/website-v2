@@ -37,7 +37,7 @@ const Partnership = () => {
         color={'textSecondary'}
         align={'center'}
       >
-        BrickMMO was developed as a collaboration between{' '}
+        BrickMMO is an ongoing collaboration between{' '}
         <Link href="https://codeadam.ca" underline="none">
           CodeAdam
         </Link>
