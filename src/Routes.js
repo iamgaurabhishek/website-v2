@@ -9,7 +9,11 @@ import {
 } from './layouts';
 
 // Landing pages
-import { Home as HomeView, Systems as SystemsView } from './views/pages';
+import {
+  Home as HomeView,
+  Education as EducationView,
+  Systems as SystemsView,
+} from './views/pages';
 
 // Landing pages
 import {
@@ -80,6 +84,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={HomeView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/education"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={EducationView}
             layout={MainLayout}
           />
         ))()}
