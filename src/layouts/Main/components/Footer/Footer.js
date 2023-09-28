@@ -2,91 +2,111 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import WebbeeLogo from 'svg/logos/Webbee';
 
-const Footer = () => (
-  <Grid container spacing={2}>
-    <Grid item xs={12}>
-      <Box
-        display={'flex'}
-        justifyContent={'space-between'}
-        alignItems={'center'}
-        width={'100%'}
-        flexDirection={{ xs: 'column', sm: 'row' }}
-      >
+import { useTheme } from '@mui/material/styles';
+
+// import WebbeeLogo from 'svg/logos/Webbee';
+import TikTokIcon from 'svg/logos/TikTok';
+
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+
+const Footer = () => {
+  const today = new Date();
+  const year = today.getFullYear();
+
+  const theme = useTheme();
+
+  return (
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
         <Box
           display={'flex'}
-          component="a"
-          underline="none"
-          href="/"
-          title="webbee"
-          height={24}
-          width={35}
+          justifyContent={'space-between'}
+          alignItems={'center'}
+          width={'100%'}
+          flexDirection={{ xs: 'column', sm: 'row' }}
         >
-          <WebbeeLogo height={'100%'} width={'100%'} />
+          <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
+            <Box
+              component={'a'}
+              href="https://www.instagram.com/brickmo_com"
+              marginRight={1}
+            >
+              <InstagramIcon color="primary" />
+            </Box>
+            <Box
+              component={'a'}
+              href="https://www.instagram.com/brickmo_com"
+              marginRight={1}
+            >
+              <YouTubeIcon color="primary" />
+            </Box>
+            <Box
+              component={'a'}
+              href="https://twitter.com/brickmmo"
+              marginRight={1}
+            >
+              <TwitterIcon color="primary" />
+            </Box>
+            <Box
+              component={'a'}
+              href="https://github.com/BrickMMO"
+              marginRight={1}
+            >
+              <GitHubIcon color="primary" />
+            </Box>
+            <Box
+              component={'a'}
+              href="https://www.tiktok.com/@brickmmo"
+              marginRight={1}
+            >
+              <TikTokIcon
+                height={'24px'}
+                width={'24px'}
+                color={theme.palette.primary.main}
+              />
+            </Box>
+          </Box>
+
+          <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
+            <Box marginTop={1} marginRight={2}>
+              <Button
+                variant="outlined"
+                color="secondary"
+                component="a"
+                href="/documentation"
+              >
+                Documentation
+              </Button>
+            </Box>
+            <Box marginTop={1}>
+              <Button
+                variant="outlined"
+                color="secondary"
+                component="a"
+                href="/get-started"
+              >
+                Get Started
+              </Button>
+            </Box>
+          </Box>
         </Box>
-        <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
-          <Box marginTop={1} marginRight={2}>
-            <Link
-              underline="none"
-              component="a"
-              href="/"
-              color="textPrimary"
-              variant={'subtitle2'}
-            >
-              Home
-            </Link>
-          </Box>
-          <Box marginTop={1} marginRight={2}>
-            <Link
-              underline="none"
-              component="a"
-              href="/docs-introduction"
-              color="textPrimary"
-              variant={'subtitle2'}
-            >
-              Documentation
-            </Link>
-          </Box>
-          <Box marginTop={1}>
-            <Button
-              variant="outlined"
-              color="primary"
-              component="a"
-              target="blank"
-              href="https://material-ui.com/store/items/webbee-landing-page/"
-              size="small"
-            >
-              Purchase now
-            </Button>
-          </Box>
-        </Box>
-      </Box>
+      </Grid>
+      <Grid item xs={12} marginY={0}>
+        <Typography
+          align={'center'}
+          variant={'subtitle2'}
+          color="textSecondary"
+        >
+          &copy; BrickMMO. {year}. All rights reserved.
+        </Typography>
+      </Grid>
     </Grid>
-    <Grid item xs={12}>
-      <Typography
-        align={'center'}
-        variant={'subtitle2'}
-        color="textSecondary"
-        gutterBottom
-      >
-        &copy; Webbee. 2021, Maccarian. All rights reserved
-      </Typography>
-      <Typography
-        align={'center'}
-        variant={'caption'}
-        color="textSecondary"
-        component={'p'}
-      >
-        When you visit or interact with our sites, services or tools, we or our
-        authorised service providers may use cookies for storing information to
-        help provide you with a better, faster and safer experience and for
-        marketing purposes.
-      </Typography>
-    </Grid>
-  </Grid>
-);
+  );
+};
 
 export default Footer;

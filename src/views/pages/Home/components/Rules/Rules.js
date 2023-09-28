@@ -116,7 +116,7 @@ const Rules = () => {
                     </Link>{' '}
                     robot vision sensor. This sensor comes available with a
                     pre-installed firmware that speaks the LEGO® sensor protocol
-                    and a MINDSTORMS® compatiable RJ12 cable
+                    and a MINDSTORMS® compatible RJ12 cable
                   </Typography>
                 </Box>
               ),
@@ -131,7 +131,7 @@ const Rules = () => {
                   </Typography>
                   <Typography component="p">
                     BrickMMO has developed inductive charging adaptors
-                    compatable with LEGO® SPIKE™ and MINDSTORMS® hubs. Vew the{' '}
+                    compatible with LEGO® SPIKE™ and MINDSTORMS® hubs. Vew the{' '}
                     <Link href="/systems-inductive-charging">
                       Inductive Charging
                     </Link>{' '}
@@ -146,8 +146,8 @@ const Rules = () => {
                 <Box>
                   <Typography component="p" marginBottom={2}>
                     We need cables. And we need long cables. Using standard RJ12
-                    connectors and cables we can create custom legnth cables.
-                    Vew the{' '}
+                    connectors and 6P6C cables we can create custom length
+                    MINDSTORMS® compatible cables. Vew the{' '}
                     <Link href="/systems-inductive-charging">
                       Custom Cables
                     </Link>{' '}

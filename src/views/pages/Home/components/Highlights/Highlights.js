@@ -31,7 +31,7 @@ const Highlights = () => {
             title: 'Designed for Education',
             subtitle: (
               <Typography>
-                80% of BrickMMO code has been develpoed by students using a{' '}
+                80% of BrickMMO code has been developed by students using a{' '}
                 <Link href="https://wic.brickmmo.com" underline="none">
                   WIC
                 </Link>{' '}
