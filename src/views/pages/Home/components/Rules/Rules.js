@@ -69,12 +69,20 @@ const Rules = () => {
         >
           Rules of BrickMMO
         </Box>
-        <Typography component={'p'} color={'textSecondary'} align={'center'}>
+        <Typography
+          component={'p'}
+          color={'textSecondary'}
+          align={'center'}
+          marginBottom={2}
+        >
           Unless absolutely impossible, everything in BrickMMO is built with
           100% LEGO® bricks.
           <br />
           Each decision to integrate a non LEGO® brand component was made with
           great difficulty!
+        </Typography>
+        <Typography component={'p'} color={'textSecondary'} align={'center'}>
+          The following are the only permitted non LEGO® brand components:
         </Typography>
       </Box>
 
@@ -114,14 +122,39 @@ const Rules = () => {
               ),
             },
             {
-              title: 'Electrcity',
-              subtitle:
-                'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+              title: 'Electricity',
+              subtitle: (
+                <Box>
+                  <Typography component="p" marginBottom={1}>
+                    LEGO® hubs need electricty and mobile robots need
+                    electrcicity but must be free of cables.
+                  </Typography>
+                  <Typography component="p">
+                    BrickMMO has developed inductive charging adaptors
+                    compatable with LEGO® SPIKE™ and MINDSTORMS® hubs. Vew the{' '}
+                    <Link href="/systems-inductive-charging">
+                      Inductive Charging
+                    </Link>{' '}
+                    system for more inforamtion.
+                  </Typography>
+                </Box>
+              ),
             },
             {
               title: 'Cables',
-              subtitle:
-                'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+              subtitle: (
+                <Box>
+                  <Typography component="p" marginBottom={2}>
+                    We need cables. And we need long cables. Using standard RJ12
+                    connectors and cables we can create custom legnth cables.
+                    Vew the{' '}
+                    <Link href="/systems-inductive-charging">
+                      Custom Cables
+                    </Link>{' '}
+                    system for more information.
+                  </Typography>
+                </Box>
+              ),
             },
           ]}
         />
