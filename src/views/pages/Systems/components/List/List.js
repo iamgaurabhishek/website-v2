@@ -55,9 +55,9 @@ const List = () => {
               align={'center'}
               marginBottom={2}
             >
-              A system could be anything from a redeveloped version of Twitter,
-              to an API that enforces the LEGO® colour palette, to a physical
-              control panel built with LEGO® bricks.
+              A system could be anything from a redeveloped version of
+              Twitter/X, to an API that enforces the LEGO® colour palette, to a
+              physical control panel built with LEGO® bricks.
             </Typography>
             <Typography
               variant={'h6'}
@@ -65,7 +65,7 @@ const List = () => {
               color={'textSecondary'}
               align={'center'}
             >
-              Systems that have been, or are currently in development:
+              Systems that have been completed, or are currently in development:
             </Typography>
           </Box>
         </Box>
@@ -76,7 +76,7 @@ const List = () => {
             {
               title: 'GPS',
               subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+                'A working GPS system using LEGO® bricks and a Pixy2 camera sensor.',
               link: {
                 text: 'GPS Details',
                 url: '/system-gps',
@@ -106,17 +106,16 @@ const List = () => {
             {
               title: 'Colours',
               subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+                'A small API to assist other systems in complying with the LEGO® colour palette.',
               link: {
-                text: 'GPS Details',
-                url: '/system-gps',
+                text: 'Colours Details',
+                url: '/system-colours',
               },
               icon: <PaletteIcon />,
             },
             {
               title: 'Pixelatte',
-              subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+              subtitle: 'An image to LEGO® brick conversion tool.',
               link: {
                 text: 'GPS Details',
                 url: '/system-gps',
@@ -126,37 +125,37 @@ const List = () => {
             {
               title: 'Places',
               subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+                'A searchable directory of locations in a BrickMMO city.',
               link: {
-                text: 'GPS Details',
-                url: '/system-gps',
+                text: 'Places Details',
+                url: '/system-places',
               },
               icon: <PlaceIcon />,
             },
             {
               title: 'Streetview',
               subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+                'A navigation tool allowing visitors to virtually navigate a BrickMMO city.',
               link: {
-                text: 'GPS Details',
-                url: '/system-gps',
+                text: 'Streetview Details',
+                url: '/system-streetview',
               },
               icon: <RouteIcon />,
             },
             {
               title: 'CLI',
               subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+                'A Command Line Interface (CLI) tool to manage a BrickMMO city from a terminal.',
               link: {
-                text: 'GPS Details',
-                url: '/system-gps',
+                text: 'CLI Details',
+                url: '/system-cli',
               },
               icon: <TerminalIcon />,
             },
             {
               title: 'Custom Cables',
               subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+                'Creating custom MINDSTORMS® cables using standard RJ12 connectors and 6P6C cables.',
               link: {
                 text: 'GPS Details',
                 url: '/system-gps',
@@ -166,7 +165,7 @@ const List = () => {
             {
               title: 'Inductive Charging',
               subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+                'Inductive charging adaptors compatible with LEGO® SPIKE™ and MINDSTORMS® hubs.',
               link: {
                 text: 'GPS Details',
                 url: '/system-gps',
@@ -176,7 +175,7 @@ const List = () => {
             {
               title: 'Bricker',
               subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+                'A Twitter/X like social media website for BrickMMO robots.',
               link: {
                 text: 'GPS Details',
                 url: '/system-gps',
@@ -185,8 +184,7 @@ const List = () => {
             },
             {
               title: 'Branding',
-              subtitle:
-                'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+              subtitle: 'Assets and guidelines for the BrickMMO brand.',
               link: {
                 text: 'GPS Details',
                 url: '/system-gps',
