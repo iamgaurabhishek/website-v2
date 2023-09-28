@@ -8,7 +8,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
+
+// import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
+import SystemImage from './images/systems.png';
 
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import SatelliteAltIcon from '@mui/icons-material/SatelliteAlt';
@@ -41,6 +43,18 @@ const Features = () => {
           <br />
           systems into BrickMMO
         </Box>
+      </Box>
+      <Box
+        display={'flex'}
+        justifyContent={'center'}
+        alignItems={'center'}
+        marginBottom={4}
+      >
+        <Box height={'100%'} width={'100%'} maxWidth={500}>
+          <img src={SystemImage} height={'100%'} width={'100%'} />
+        </Box>
+      </Box>
+      <Box marginBottom={4}>
         <Typography
           variant={'h6'}
           component={'p'}
@@ -49,16 +63,6 @@ const Features = () => {
         >
           Integrate any of these systems into your BrickMMO smart city:
         </Typography>
-      </Box>
-      <Box
-        display={'flex'}
-        justifyContent={'center'}
-        alignItems={'center'}
-        marginBottom={4}
-      >
-        <Box height={'100%'} width={'100%'} maxWidth={600}>
-          <TeamWorkingIllustration height={'100%'} width={'100%'} />
-        </Box>
       </Box>
       <Box>
         <Grid container spacing={4}>

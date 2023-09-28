@@ -7,7 +7,9 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import RocketIllustration from 'svg/illustrations/Rocket';
+
+// import RocketIllustration from 'svg/illustrations/Rocket';
+import HeroImage from './images/hero.png';
 
 const Hero = () => {
   const theme = useTheme();
@@ -63,7 +65,7 @@ const Hero = () => {
               sx={{ fontWeight: 400 }}
             >
               View the{' '}
-              <Link component="a" href="/rules-exceptions" underline="none">
+              <Link component="a" href="#rules" underline="none">
                 Rules of BrickMMO and Exceptions
               </Link>
               .
@@ -112,7 +114,7 @@ const Hero = () => {
           alignItems={'center'}
         >
           <Box height={'100%'} width={'100%'} maxHeight={600}>
-            <RocketIllustration width={'100%'} height={'100%'} />
+            <img src={HeroImage} width={'100%'} height={'100%'} />
           </Box>
         </Box>
       </Grid>

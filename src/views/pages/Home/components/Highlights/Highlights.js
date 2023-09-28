@@ -46,9 +46,10 @@ const Highlights = () => {
           },
           {
             title: 'Custom Builds',
-            subtitle: 'Custom interactive experiences built with LEGO® bricks!',
+            subtitle:
+              'Custom interactive experiences built with LEGO® bricks and code!',
             link: {
-              text: 'Projects',
+              text: 'View Projects',
               url: '/commissions',
             },
             icon: <PhotoIcon />,

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
@@ -46,7 +47,7 @@ ExceptionGroupItem.propTypes = {
 
 const Rules = () => {
   return (
-    <Box>
+    <Box id="rules">
       <Box marginBottom={4}>
         <Typography
           sx={{
@@ -82,8 +83,35 @@ const Rules = () => {
           items={[
             {
               title: 'Cameras',
-              subtitle:
-                'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+              subtitle: (
+                <Box>
+                  <Typography component="p" marginBottom={1}>
+                    LEGO® does not make cameras, but they are crucial to many
+                    BrickMMO systems including{' '}
+                    <Link href="/systems-gps" underline="none">
+                      GPS
+                    </Link>
+                    ,{' '}
+                    <Link href="/systems-gps" underline="none">
+                      Streetview
+                    </Link>
+                    ,{' '}
+                    <Link href="/systems-gps" underline="none">
+                      Places
+                    </Link>
+                    , and more.
+                  </Typography>
+                  <Typography component="p">
+                    BrickMMO uses the{' '}
+                    <Link href="https://pixycam.com/pixy2/" underline="none">
+                      Pixy2
+                    </Link>{' '}
+                    robot vision sensor. This sensor comes available with a
+                    pre-installed firmware that speaks the LEGO® sensor protocol
+                    and a MINDSTORMS® compatiable RJ12 cable
+                  </Typography>
+                </Box>
+              ),
             },
             {
               title: 'Electrcity',
