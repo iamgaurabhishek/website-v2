@@ -94,7 +94,7 @@ const Hero = () => {
               <Button
                 component={'a'}
                 href={'/documentation'}
-                variant="contained"
+                variant="outlined"
                 color="secondary"
                 size="large"
                 fullWidth={isMd ? false : true}

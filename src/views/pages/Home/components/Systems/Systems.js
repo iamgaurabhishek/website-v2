@@ -172,7 +172,7 @@ const Features = () => {
             <Button
               component={'a'}
               href={'/contact'}
-              variant="contained"
+              variant="outlined"
               color="secondary"
               size="large"
             >

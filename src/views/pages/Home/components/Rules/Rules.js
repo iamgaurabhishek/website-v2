@@ -82,7 +82,7 @@ const Rules = () => {
           great difficulty!
         </Typography>
         <Typography component={'p'} color={'textSecondary'} align={'center'}>
-          The following are the only permitted non LEGO® brand components:
+          The following are the only non LEGO® brand components permitted:
         </Typography>
       </Box>
 

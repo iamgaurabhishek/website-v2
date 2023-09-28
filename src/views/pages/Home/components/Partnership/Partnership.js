@@ -29,7 +29,7 @@ const Partnership = () => {
         gutterBottom
         align={'center'}
       >
-        BrickMMO is a Collaboration Project
+        BrickMMO is a Collaborative Project
       </Box>
       <Typography
         variant={'h6'}
@@ -73,9 +73,11 @@ const Partnership = () => {
                 height={'50px'}
                 src={item.image}
                 alt="..."
-                sx={{
-                  filter: 'grayscale(1)',
-                }}
+                sx={
+                  {
+                    /*filter: 'grayscale(1)',*/
+                  }
+                }
               />
             </Box>
           </Box>

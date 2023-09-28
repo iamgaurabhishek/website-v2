@@ -75,7 +75,7 @@ const Footer = () => {
           <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
             <Box marginTop={1} marginRight={2}>
               <Button
-                variant="outlined"
+                variant="contained"
                 color="secondary"
                 component="a"
                 href="/documentation"
