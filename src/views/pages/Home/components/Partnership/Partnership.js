@@ -4,10 +4,6 @@ import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
-import CodeAdamLogo from './images/codeadam.jpg';
-import BrevisReferoLogo from './images/brevisrefero.jpg';
-import HumberLogo from './images/humber.jpg';
-
 const Partnership = () => {
   return (
     <Box>
@@ -54,15 +50,15 @@ const Partnership = () => {
       <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
         {[
           {
-            image: CodeAdamLogo,
+            image: 'codeadam.jpg',
             url: 'https://codeadam.ca',
           },
           {
-            image: HumberLogo,
+            image: 'humber.jpg',
             url: 'https://humber.ca',
           },
           {
-            image: BrevisReferoLogo,
+            image: 'brevisrefero.jpg',
             url: 'https://brevisrefero.com',
           },
         ].map((item, i) => (
@@ -71,7 +67,7 @@ const Partnership = () => {
               <Box
                 component="img"
                 height={'50px'}
-                src={item.image}
+                src={'/images/' + item.image}
                 alt="..."
                 sx={
                   {

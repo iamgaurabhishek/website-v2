@@ -13,6 +13,7 @@ import {
   Home as HomeView,
   Education as EducationView,
   Systems as SystemsView,
+  Funding as FundingView,
 } from './views/pages';
 
 // Landing pages
@@ -106,6 +107,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={SystemsView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/funding"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={FundingView}
             layout={MainLayout}
           />
         ))()}

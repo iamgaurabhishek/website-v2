@@ -17,7 +17,7 @@ const Counter = () => {
 
   return (
     <Box>
-      <Box marginBottom={{ xs: 4, sm: 6, md: 8 }}>
+      <Box>
         <Grid container spacing={2}>
           {[
             {
