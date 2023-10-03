@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
-import { List, Hero } from './components';
+import { Hero } from './components';
 
 const Funding = () => {
   const theme = useTheme();
@@ -13,9 +13,6 @@ const Funding = () => {
           <Hero />
         </Container>
       </Box>
-      <Container>
-        <List />
-      </Container>
     </Box>
   );
 };

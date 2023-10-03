@@ -154,7 +154,7 @@ const Topbar = ({
             <Link
               underline="none"
               component="a"
-              href="/education"
+              href="/funding"
               color="textPrimary"
             >
               Funding
