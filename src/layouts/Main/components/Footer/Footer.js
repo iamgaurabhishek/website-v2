@@ -105,6 +105,15 @@ const Footer = () => {
         >
           &copy; BrickMMO. {year}. All rights reserved.
         </Typography>
+        <Typography
+          marginTop={1}
+          align={'center'}
+          variant={'subtitle2'}
+          color={'textSecondary'}
+        >
+          LEGO, the LEGO logo and the Minifigure are trademarks of the LEGO
+          Group.
+        </Typography>
       </Grid>
     </Grid>
   );
