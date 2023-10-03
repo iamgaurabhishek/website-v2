@@ -50,16 +50,6 @@ const Wil = () => {
           <br />
           maintaining the comfort of the classroom.
         </Typography>
-        <Box marginTop={2} display={'flex'} justifyContent={'center'}>
-          <Button
-            color={'primary'}
-            variant={'contained'}
-            size={'large'}
-            href="https://wic.brickmmo.com"
-          >
-            Read the White paper
-          </Button>
-        </Box>
       </Box>
       <Grid container spacing={4}>
         {[
@@ -125,6 +115,16 @@ const Wil = () => {
           </Grid>
         ))}
       </Grid>
+      <Box marginTop={3} display={'flex'} justifyContent={'center'}>
+        <Button
+          color={'primary'}
+          variant={'contained'}
+          size={'large'}
+          href="https://wic.brickmmo.com"
+        >
+          Read the White paper
+        </Button>
+      </Box>
     </Box>
   );
 };
