@@ -3,21 +3,22 @@ import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
-import { useTheme } from '@mui/material/styles';
-import { colors } from '@mui/material';
+// import { useTheme } from '@mui/material/styles';
+// import { colors } from '@mui/material';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import WebbeeLogo from 'svg/logos/Webbee';
-import paletteTypes from 'common/paletteTypes';
+// import WebbeeLogo from 'svg/logos/Webbee';
+// import paletteTypes from 'common/paletteTypes';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Topbar = ({
-  themeMode,
-  themeToggler,
-  setThemePalette,
+  // themeMode,
+  // themeToggler,
+  // setThemePalette,
   onSidebarOpen,
-  paletteType,
+  // paletteType,
 }) => {
-  const theme = useTheme();
+  // const theme = useTheme();
   return (
     <Box
       display={'flex'}
@@ -26,11 +27,17 @@ const Topbar = ({
       width={'100%'}
     >
       <Box display={'flex'} alignItems={'center'}>
-        <Box marginRight={{ xs: 1, sm: 2 }}>
+        <Box marginRight={{ xs: 0, sm: 0 }}>
           <IconButton onClick={onSidebarOpen} aria-label="Menu">
             <MenuIcon />
           </IconButton>
         </Box>
+        <Box>
+          <IconButton href="https://github.com/BrickMMO">
+            <GitHubIcon />
+          </IconButton>
+        </Box>
+        {/*
         <Box
           display={'flex'}
           alignItems="baseline"
@@ -43,8 +50,10 @@ const Topbar = ({
         >
           <WebbeeLogo height={'100%'} width={'100%'} />
         </Box>
+        */}
       </Box>
       <Box display="flex" alignItems={'center'}>
+        {/*
         <Box
           display={'flex'}
           padding={1}
@@ -124,8 +133,9 @@ const Topbar = ({
             )}
           </IconButton>
         </Box>
+        */}
         <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-          <Box>
+          <Box marginRight={2}>
             <Link underline="none" component="a" href="/" color="textPrimary">
               Home
             </Link>
@@ -134,22 +144,41 @@ const Topbar = ({
             <Link
               underline="none"
               component="a"
-              href="/docs-introduction"
+              href="/education"
               color="textPrimary"
             >
-              Documentation
+              Education
             </Link>
           </Box>
-          <Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/funding"
+              color="textPrimary"
+            >
+              Funding
+            </Link>
+          </Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/commissions"
+              color="textPrimary"
+            >
+              Commissions
+            </Link>
+          </Box>
+          <Box marginLeft={2}>
             <Button
               variant="contained"
               color="primary"
               component="a"
-              target="blank"
-              href="https://material-ui.com/store/items/webbee-landing-page/"
+              href="/get-started"
               size="large"
             >
-              Purchase now
+              Get Started
             </Button>
           </Box>
         </Box>
