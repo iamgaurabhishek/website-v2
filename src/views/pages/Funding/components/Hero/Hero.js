@@ -21,7 +21,7 @@ const Hero = () => {
                 fontWeight: 700,
               }}
             >
-              Systems
+              Funding
             </Typography>
             <Typography
               variant="h4"
