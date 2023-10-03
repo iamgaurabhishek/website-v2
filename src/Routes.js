@@ -6,6 +6,7 @@ import {
   Main as MainLayout,
   Fluid as FluidLayout,
   Fixed as FixedLayout,
+  BrickMmo as BrickMmoLayout,
 } from './layouts';
 
 // Landing pages
@@ -85,7 +86,7 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={HomeView}
-            layout={MainLayout}
+            layout={BrickMmoLayout}
           />
         ))()}
       />
@@ -96,7 +97,7 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={EducationView}
-            layout={MainLayout}
+            layout={BrickMmoLayout}
           />
         ))()}
       />
@@ -107,7 +108,7 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={SystemsView}
-            layout={MainLayout}
+            layout={BrickMmoLayout}
           />
         ))()}
       />
@@ -118,7 +119,7 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={FundingView}
-            layout={MainLayout}
+            layout={BrickMmoLayout}
           />
         ))()}
       />
