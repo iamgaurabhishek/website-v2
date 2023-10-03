@@ -1,21 +1,21 @@
 import React from 'react';
-import { alpha, useTheme } from '@mui/material/styles';
+// import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Avatar from '@mui/material/Avatar';
+// import Grid from '@mui/material/Grid';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemText from '@mui/material/ListItemText';
+// import ListItemAvatar from '@mui/material/ListItemAvatar';
+// import Avatar from '@mui/material/Avatar';
 
-import ChairIcon from '@mui/icons-material/Chair';
-import TvIcon from '@mui/icons-material/Tv';
-import GroupsIcon from '@mui/icons-material/Groups';
-import WorkIcon from '@mui/icons-material/Work';
+// import ChairIcon from '@mui/icons-material/Chair';
+// import TvIcon from '@mui/icons-material/Tv';
+// import GroupsIcon from '@mui/icons-material/Groups';
+// import WorkIcon from '@mui/icons-material/Work';
 
 const Wil = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
     <Box>
@@ -51,6 +51,7 @@ const Wil = () => {
           maintaining the comfort of the classroom.
         </Typography>
       </Box>
+      {/*
       <Grid container spacing={4}>
         {[
           {
@@ -115,6 +116,7 @@ const Wil = () => {
           </Grid>
         ))}
       </Grid>
+      */}
       <Box marginTop={3} display={'flex'} justifyContent={'center'}>
         <Button
           color={'primary'}

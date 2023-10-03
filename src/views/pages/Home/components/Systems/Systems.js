@@ -75,6 +75,7 @@ const Systems = () => {
                 url: '/system-gps',
               },
               icon: <SatelliteAltIcon />,
+              technology: ['python', 'nodejs'],
             },
             {
               title: 'Panel',
@@ -85,6 +86,7 @@ const Systems = () => {
                 url: '/system-panel',
               },
               icon: <ToggleOnIcon />,
+              technology: ['python', 'laravel', 'php'],
             },
             {
               title: 'Radio',
@@ -95,6 +97,7 @@ const Systems = () => {
                 url: '/system-radio',
               },
               icon: <RadioIcon />,
+              technology: ['nodejs', 'laravel', 'php'],
             },
           ].map((item, i) => (
             <Grid item xs={12} sm={6} md={4} key={i}>
@@ -128,6 +131,16 @@ const Systems = () => {
                     {item.subtitle}
                   </Typography>
                   <Link marginTop={1}>{item.link.text}</Link>
+                  <Grid container marginTop={1}>
+                    {item.technology.map((item) => (
+                      <Grid item marginRight={1}>
+                        <img
+                          src={'https://console.codeadam.ca/api/image/' + item}
+                          width={20}
+                        />
+                      </Grid>
+                    ))}
+                  </Grid>
                 </Box>
               </Box>
             </Grid>
