@@ -100,11 +100,11 @@ const Rules = () => {
                       GPS
                     </Link>
                     ,{' '}
-                    <Link href="/systems-gps" underline="none">
+                    <Link href="/systems-streetview" underline="none">
                       Streetview
                     </Link>
                     ,{' '}
-                    <Link href="/systems-gps" underline="none">
+                    <Link href="/systems-places" underline="none">
                       Places
                     </Link>
                     , and more.
@@ -127,7 +127,7 @@ const Rules = () => {
                 <Box>
                   <Typography component="p" marginBottom={1}>
                     LEGO® hubs need electricty and mobile robots need
-                    electrcicity but must be free of cables.
+                    electricity but must be free of cables.
                   </Typography>
                   <Typography component="p">
                     BrickMMO has developed inductive charging adaptors

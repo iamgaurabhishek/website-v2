@@ -14,7 +14,7 @@ import Typography from '@mui/material/Typography';
 // import GroupsIcon from '@mui/icons-material/Groups';
 // import WorkIcon from '@mui/icons-material/Work';
 
-const Wil = () => {
+const Wic = () => {
   // const theme = useTheme();
 
   return (
@@ -38,7 +38,7 @@ const Wil = () => {
           align={'center'}
           gutterBottom
         >
-          Workplace Integrated Learning
+          Workplace Integrated Classroom
         </Box>
         <Typography
           variant={'h6'}
@@ -131,4 +131,4 @@ const Wil = () => {
   );
 };
 
-export default Wil;
+export default Wic;
