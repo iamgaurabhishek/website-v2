@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
-import { Rules, Systems, Partnership, Hero, Counter, Wil } from './components';
+import { Hero, Counter, Wic, Reason, Technology } from './components';
 
 const Education = () => {
   const theme = useTheme();
@@ -17,18 +17,15 @@ const Education = () => {
         <Counter />
       </Container>
       <Container>
-        <Wil />
-      </Container>
-      <Container>
-        <Systems />
+        <Reason />
       </Container>
       <Box bgcolor={theme.palette.alternate.main}>
-        <Container maxWidth={800}>
-          <Rules />
+        <Container>
+          <Technology />
         </Container>
       </Box>
       <Container>
-        <Partnership />
+        <Wic />
       </Container>
     </Box>
   );
