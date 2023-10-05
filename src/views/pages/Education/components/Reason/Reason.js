@@ -1,75 +1,28 @@
 import React from 'react';
 
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+
+import SectionFlag from 'common/SectionFlag';
+import SectionTitle from 'common/SectionTitle';
+import SectionSubTitle from 'common/SectionSubTitle';
+import SectionImage from 'common/SectionImage';
+import SectionList from 'common/SectionList';
+
+import { concepts } from './data.js';
 
 const Reason = () => {
   return (
     <Box>
-      <Box marginBottom={4}>
-        <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'textSecondary'}
-          align={'center'}
-        >
-          For Education
-        </Typography>
-        <Box
-          display={'flex'}
-          justifyContent={'center'}
-          alignItems={'center'}
-          marginBottom={2}
-          marginTop={2}
-        >
-          <Box height={'100%'} width={'100%'} maxWidth={600}>
-            <img src="/images/map.png" height={'100%'} width={'100%'} />
-          </Box>
-        </Box>
-        <Box
-          component={Typography}
-          fontWeight={700}
-          variant={'h3'}
-          align={'center'}
-          gutterBottom
-        >
-          BrickMMO was developed out of a
-          <br />
-          desire to teach code differently
-        </Box>
-        <Typography
-          variant={'h5'}
-          component={'p'}
-          color={'textSecondary'}
-          align={'center'}
-          marginBottom={2}
-        >
-          Providing students with a real world sandbox to apply:
-        </Typography>
-        <Box>
-          {[
-            'Artificial Inteligence (AI)',
-            'Machine Leaning (ML)',
-            'Internet of Things (IOT)',
-            'Application Programming Interfaces (APIs)',
-            'Front-End Programming Languages',
-            'Back-End Programming Languages',
-          ].map((item) => (
-            <Typography
-              variant={'h6'}
-              component={'p'}
-              color={'textSecondary'}
-              align={'center'}
-              marginBottom={1}
-            >
-              {item}
-            </Typography>
-          ))}
-        </Box>
-      </Box>
+      <SectionFlag>For Education</SectionFlag>
+      <SectionImage src="/images/map.png" />
+      <SectionTitle>
+        BrickMMO was developed out of a desire to teach code differently
+      </SectionTitle>
+      <SectionSubTitle>
+        Providing students with a real world sandbox to apply:
+      </SectionSubTitle>
+
+      <SectionList data={concepts} />
     </Box>
   );
 };
