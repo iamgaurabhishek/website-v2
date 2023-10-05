@@ -7,9 +7,9 @@ const SectionImage = ({ src }) => (
     display="flex"
     flexWrap="wrap"
     justifyContent="center"
-    maxWidth={800}
     marginX="auto"
     marginBottom={2}
+    maxWidth={800}
   >
     <img src={src} height="100%" width="100%" />
   </Box>

@@ -14,7 +14,6 @@ const Topbar = ({ onSidebarOpen }) => {
   return (
     <Box display={'flex'} justifyContent={'space-between'} width={'100%'}>
       <Box display={'flex'} alignItems={'center'}>
-
         <IconButton onClick={onSidebarOpen} aria-label={'Menu'}>
           <MenuIcon />
         </IconButton>
@@ -26,7 +25,6 @@ const Topbar = ({ onSidebarOpen }) => {
         <Box marginRight={2}>
           <Link to="/">
             <Typography color="textPrimary" component={'span'}>
-
               Home
             </Typography>
           </Link>

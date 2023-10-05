@@ -14,91 +14,83 @@ import PhotoIcon from '@mui/icons-material/Photo';
 const Highlights = () => {
   const theme = useTheme();
   return (
-    <Box>
-      <Grid container spacing={2}>
-        {[
-          {
-            title: 'Built for Developers',
-            subtitle:
-              'BrickMMO is programmed so anyone can join in and build their own interactive smart city!',
-            link: {
-              text: 'Get Started',
-              url: '/get-started',
-            },
-            icon: <CodeIcon />,
+    <Grid container spacing={2}>
+      {[
+        {
+          title: 'Built for Developers',
+          subtitle:
+            'BrickMMO is programmed so anyone can join in and build their own interactive smart city!',
+          link: {
+            text: 'Get Started',
+            url: '/get-started',
           },
-          {
-            title: 'Designed for Education',
-            subtitle: (
-              <Typography>
-                80% of BrickMMO code has been developed by students using a{' '}
-                <Link href="https://wic.brickmmo.com" underline="none">
-                  WIC
-                </Link>{' '}
-                framework.
-              </Typography>
-            ),
-            link: {
-              text: 'Education',
-              url: '/educatiun',
-            },
-            icon: <SchoolIcon />,
+          icon: <CodeIcon />,
+        },
+        {
+          title: 'Designed for Education',
+          subtitle: (
+            <Typography>
+              80% of BrickMMO code has been developed by students using a{' '}
+              <Link href="https://wic.brickmmo.com" underline="none">
+                WIC
+              </Link>{' '}
+              framework.
+            </Typography>
+          ),
+          link: {
+            text: 'Education',
+            url: '/educatiun',
           },
-          {
-            title: 'Custom Builds',
-            subtitle:
-              'Custom interactive experiences built with LEGO® bricks and whole lot of code!',
-            link: {
-              text: 'View Projects',
-              url: '/commissions',
-            },
-            icon: <PhotoIcon />,
+          icon: <SchoolIcon />,
+        },
+        {
+          title: 'Custom Builds',
+          subtitle:
+            'Custom interactive experiences built with LEGO® bricks and whole lot of code!',
+          link: {
+            text: 'View Projects',
+            url: '/commissions',
           },
-        ].map((item, i) => (
-          <Grid item xs={12} md={4} key={i}>
-            <Box width={1} height={'100%'}>
-              <Box
-                display={'flex'}
-                flexDirection={'column'}
-                alignItems={'center'}
-              >
-                <Box
-                  component={Avatar}
-                  width={60}
-                  height={60}
-                  marginBottom={2}
-                  bgcolor={alpha(theme.palette.primary.main, 0.1)}
-                  color={theme.palette.primary.main}
-                >
-                  {item.icon}
-                </Box>
-                <Typography
-                  variant={'h6'}
-                  gutterBottom
-                  sx={{ fontWeight: 500 }}
-                  align={'center'}
-                >
-                  {item.title}
-                </Typography>
-                <Typography align={'center'} color="textSecondary">
-                  {item.subtitle}
-                </Typography>
-                <Box marginTop={2}>
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    component="a"
-                    href={item.link.url}
-                  >
-                    {item.link.text}
-                  </Button>
-                </Box>
-              </Box>
+          icon: <PhotoIcon />,
+        },
+      ].map((item, i) => (
+        <Grid item xs={12} md={4} key={i}>
+          <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
+            <Box
+              component={Avatar}
+              width={60}
+              height={60}
+              marginBottom={2}
+              bgcolor={alpha(theme.palette.primary.main, 0.1)}
+              color={theme.palette.primary.main}
+            >
+              {item.icon}
             </Box>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+            <Typography
+              variant="h4"
+              component="h2"
+              gutterBottom
+              sx={{ fontWeight: 500 }}
+              align={'center'}
+            >
+              {item.title}
+            </Typography>
+            <Typography align={'center'} color="textSecondary" marginBottom={2}>
+              {item.subtitle}
+            </Typography>
+
+            <Button
+              variant="contained"
+              color="secondary"
+              component="a"
+              href={item.link.url}
+            >
+              {item.link.text}
+            </Button>
+          </Box>
+        </Grid>
+      ))}
+    </Grid>
   );
 };
 
