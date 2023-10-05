@@ -1,21 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { useTheme } from '@mui/material/styles';
+
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 
 const SidebarNav = ({ pages, onClose }) => {
-  const theme = useTheme();
-  const [activeLink, setActiveLink] = useState('');
-  useEffect(() => {
-    setActiveLink(window && window.location ? window.location.pathname : '');
-  }, []);
-
   return (
     <Box>
       <Box
@@ -43,24 +38,10 @@ const SidebarNav = ({ pages, onClose }) => {
                 {item.title}
               </Typography>
               <Grid container spacing={1}>
-                {item.pages.map((p, i) => (
+                {item.pages.map((item, i) => (
                   <Grid item xs={6} key={i}>
-                    <Link
-                      variant="body2"
-                      component={'a'}
-                      href={p.href}
-                      color={activeLink === p.href ? 'primary' : 'textPrimary'}
-                      underline={'none'}
-                      sx={{
-                        fontWeight: activeLink === p.href ? 600 : 400,
-                        '&:hover': {
-                          textDecoration: 'none',
-                          color: theme.palette.primary.dark,
-                        },
-                      }}
-                      onClick={() => onClose()}
-                    >
-                      {p.title}
+                    <Link to={item.href} onClick={() => onClose()}>
+                      <Typography color="textPrimary">{item.title}</Typography>
                     </Link>
                   </Grid>
                 ))}
