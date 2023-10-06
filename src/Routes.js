@@ -12,6 +12,7 @@ import {
 // Landing pages
 import {
   Home as HomeView,
+  Commissions as CommissionsView,
   Education as EducationView,
   Systems as SystemsView,
   Funding as FundingView,
@@ -86,6 +87,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={HomeView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/commissions"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={CommissionsView}
             layout={BrickMmoLayout}
           />
         ))()}
