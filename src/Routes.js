@@ -13,6 +13,9 @@ import {
 import {
   Home as HomeView,
   Commissions as CommissionsView,
+  CommissionsCdmo as CommissionsCdmoView,
+  CommissionsHumber as CommissionsHumberView,
+  CommissionsLogos as CommissionsLogosView,
   Education as EducationView,
   Systems as SystemsView,
   Funding as FundingView,
@@ -98,6 +101,39 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={CommissionsView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/commissions-humber"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={CommissionsHumberView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/commissions-cdmo"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={CommissionsCdmoView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/commissions-logos"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={CommissionsLogosView}
             layout={BrickMmoLayout}
           />
         ))()}
