@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -16,16 +17,17 @@ const SectionEndButton = ({ text, href }) => {
       display="flex"
       flexWrap="wrap"
       justifyContent="center"
-      maxWidth={800}
       marginX="auto"
-      marginBottom={2}
+      maxWidth={800}
+      marginY={2}
     >
       <Button
-        color={'primary'}
-        variant={'contained'}
-        size={'large'}
-        href={href}
+        color="primary"
+        variant="contained"
+        size="large"
+        component={LinkRouter}
         fullWidth={isMd ? false : true}
+        to={href}
       >
         {text}
       </Button>

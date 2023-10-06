@@ -1,84 +1,39 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import Box from '@mui/material/Box';
+import { Link as LinkRouter } from 'react-router-dom';
+
 import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
+import SectionFlag from 'common/SectionFlag';
+import SectionTitle from 'common/SectionTitle';
+import SectionSubTitle from 'common/SectionSubTitle';
+import SectionImageList from 'common/SectionImageList';
+
+import { partners } from './data.js';
 
 const Partnership = () => {
   return (
     <Box>
-      <Typography
-        sx={{
-          textTransform: 'uppercase',
-          fontWeight: 'medium',
-        }}
-        gutterBottom
-        color={'textSecondary'}
-        align={'center'}
-      >
-        PARTNERSHIP
-      </Typography>
-      <Box
-        component={Typography}
-        fontWeight={700}
-        variant={'h3'}
-        gutterBottom
-        align={'center'}
-      >
-        BrickMMO is a Collaborative Project
-      </Box>
-      <Typography
-        variant={'h6'}
-        component={'p'}
-        color={'textSecondary'}
-        align={'center'}
-      >
+      <SectionFlag>PARTNERSHIP</SectionFlag>
+      <SectionTitle>BrickMMO is a Collaborative Project</SectionTitle>
+      <SectionSubTitle>
         BrickMMO is an ongoing collaboration between{' '}
-        <Link href="https://codeadam.ca" underline="none">
+        <Link to="https://codeadam.ca" component={LinkRouter}>
           CodeAdam
         </Link>
         ,{' '}
-        <Link href="https://codeadam.ca" underline="none">
+        <Link to="https://codeadam.ca" component={LinkRouter}>
           Humber College
         </Link>
         , and{' '}
-        <Link href="https://codeadam.ca" underline="none">
+        <Link to="https://codeadam.ca" component={LinkRouter}>
           BrevisRefero
         </Link>
         .
-      </Typography>
-      <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
-        {[
-          {
-            image: 'codeadam.jpg',
-            url: 'https://codeadam.ca',
-          },
-          {
-            image: 'humber.jpg',
-            url: 'https://humber.ca',
-          },
-          {
-            image: 'brevisrefero.jpg',
-            url: 'https://brevisrefero.com',
-          },
-        ].map((item, i) => (
-          <Box marginTop={3} marginX={2} key={i}>
-            <Box component="a" href={item.url}>
-              <Box
-                component="img"
-                height={'50px'}
-                src={'/images/' + item.image}
-                alt="..."
-                sx={
-                  {
-                    /*filter: 'grayscale(1)',*/
-                  }
-                }
-              />
-            </Box>
-          </Box>
-        ))}
-      </Box>
+      </SectionSubTitle>
+
+      <SectionImageList data={partners} />
     </Box>
   );
 };

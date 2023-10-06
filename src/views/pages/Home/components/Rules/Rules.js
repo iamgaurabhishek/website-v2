@@ -1,12 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
+import SectionFlag from 'common/SectionFlag';
+import SectionTitle from 'common/SectionTitle';
+
+import { faqs } from './data.js';
 
 const ExceptionGroupItem = ({ items }) => {
   return (
@@ -49,116 +54,24 @@ const Rules = () => {
   return (
     <Box id="rules">
       <Box marginBottom={4}>
+        <SectionFlag>Rules and Exceptions</SectionFlag>
+        <SectionTitle>Rules of BrickMMO</SectionTitle>
         <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'textSecondary'}
-          align={'center'}
-        >
-          Rules and Exceptions
-        </Typography>
-        <Box
-          component={Typography}
-          fontWeight={700}
-          variant={'h3'}
-          gutterBottom
-          align={'center'}
-        >
-          Rules of BrickMMO
-        </Box>
-        <Typography
-          component={'p'}
-          color={'textSecondary'}
-          align={'center'}
+          component="p"
+          color="textSecondary"
+          align="center"
           marginBottom={2}
         >
           Unless absolutely impossible, everything in BrickMMO is built with
-          100% LEGO® bricks.
-          <br />
-          Each decision to integrate a non LEGO® brand component was made with
-          great difficulty!
+          100% LEGO® bricks. Each decision to integrate a non LEGO® brand
+          component was made with great difficulty!
         </Typography>
-        <Typography component={'p'} color={'textSecondary'} align={'center'}>
+        <Typography component="p" color="textSecondary" align="center">
           The following are the only non LEGO® brand components permitted:
         </Typography>
       </Box>
 
-      <Box>
-        <ExceptionGroupItem
-          items={[
-            {
-              title: 'Cameras',
-              subtitle: (
-                <Box>
-                  <Typography component="p" marginBottom={1}>
-                    LEGO® does not make cameras, but they are crucial to many
-                    BrickMMO systems including{' '}
-                    <Link href="/systems-gps" underline="none">
-                      GPS
-                    </Link>
-                    ,{' '}
-                    <Link href="/systems-streetview" underline="none">
-                      Streetview
-                    </Link>
-                    ,{' '}
-                    <Link href="/systems-places" underline="none">
-                      Places
-                    </Link>
-                    , and more.
-                  </Typography>
-                  <Typography component="p">
-                    BrickMMO uses the{' '}
-                    <Link href="https://pixycam.com/pixy2/" underline="none">
-                      Pixy2
-                    </Link>{' '}
-                    robot vision sensor. This sensor comes available with a
-                    pre-installed firmware that speaks the LEGO® sensor protocol
-                    and a MINDSTORMS® compatible RJ12 cable
-                  </Typography>
-                </Box>
-              ),
-            },
-            {
-              title: 'Electricity',
-              subtitle: (
-                <Box>
-                  <Typography component="p" marginBottom={1}>
-                    LEGO® hubs need electricty and mobile robots need
-                    electricity but must be free of cables.
-                  </Typography>
-                  <Typography component="p">
-                    BrickMMO has developed inductive charging adaptors
-                    compatible with LEGO® SPIKE™ and MINDSTORMS® hubs. Vew the{' '}
-                    <Link href="/systems-inductive-charging">
-                      Inductive Charging
-                    </Link>{' '}
-                    system for more inforamtion.
-                  </Typography>
-                </Box>
-              ),
-            },
-            {
-              title: 'Cables',
-              subtitle: (
-                <Box>
-                  <Typography component="p" marginBottom={2}>
-                    We need cables. And we need long cables. Using standard RJ12
-                    connectors and 6P6C cables we can create custom length
-                    MINDSTORMS® compatible cables. Vew the{' '}
-                    <Link href="/systems-inductive-charging">
-                      Custom Cables
-                    </Link>{' '}
-                    system for more information.
-                  </Typography>
-                </Box>
-              ),
-            },
-          ]}
-        />
-      </Box>
+      <ExceptionGroupItem items={faqs} />
     </Box>
   );
 };

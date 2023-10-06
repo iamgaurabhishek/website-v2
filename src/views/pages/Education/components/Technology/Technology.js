@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
+
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
@@ -54,8 +56,8 @@ const Technology = () => {
             <Button
               variant="contained"
               color="primary"
-              component="a"
-              href="/systems"
+              component={LinkRouter}
+              to="/systems"
               size="large"
               fullWidth={isMd ? false : true}
             >

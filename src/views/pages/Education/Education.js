@@ -11,7 +11,7 @@ import {
   Wic,
   Reason,
   Technology,
-  Links,
+  Topics,
   Programs,
 } from './components';
 
@@ -41,7 +41,7 @@ const Education = () => {
       </Box>
       <Box>
         <Container>
-          <Links />
+          <Topics />
         </Container>
       </Box>
       <Box bgcolor={theme.palette.alternate.main}>

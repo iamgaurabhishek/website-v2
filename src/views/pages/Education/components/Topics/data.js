@@ -1,4 +1,4 @@
-export const links = [
+export const topics = [
   {
     title: 'Composer',
     image: 'composer.png',

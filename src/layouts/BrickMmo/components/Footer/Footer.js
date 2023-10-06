@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -32,36 +32,36 @@ const Footer = () => {
         >
           <Box display="flex" flexWrap="wrap" alignItems="center">
             <IconButton
-              component="a"
-              href="https://www.instagram.com/brickmo_com"
+              component={LinkRouter}
+              to="https://www.instagram.com/brickmo_com"
               marginRight={1}
             >
               <InstagramIcon color="primary" />
             </IconButton>
             <IconButton
-              component="a"
-              href="https://www.instagram.com/brickmo_com"
+              component={LinkRouter}
+              to="https://www.instagram.com/brickmo_com"
               marginRight={1}
             >
               <YouTubeIcon color="primary" />
             </IconButton>
             <IconButton
-              component="a"
-              href="https://twitter.com/brickmmo"
+              component={LinkRouter}
+              to="https://twitter.com/brickmmo"
               marginRight={1}
             >
               <TwitterIcon color="primary" />
             </IconButton>
             <IconButton
-              component="a"
-              href="https://github.com/BrickMMO"
+              component={LinkRouter}
+              to="https://github.com/BrickMMO"
               marginRight={1}
             >
               <GitHubIcon color="primary" />
             </IconButton>
             <IconButton
-              component="a"
-              href="https://www.tiktok.com/@brickmmo"
+              component={LinkRouter}
+              to="https://www.tiktok.com/@brickmmo"
               marginRight={1}
             >
               <TikTokIcon
@@ -74,18 +74,24 @@ const Footer = () => {
 
           <Box display="flex" flexWrap="wrap" alignItems="center">
             <Box marginTop={1} marginRight={2}>
-              <Link to="/documentation">
-                <Button variant="contained" color="secondary" component="span">
-                  Documentation
-                </Button>
-              </Link>
+              <Button
+                variant="contained"
+                color="secondary"
+                component={LinkRouter}
+                to="/documentation"
+              >
+                Documentation
+              </Button>
             </Box>
             <Box marginTop={1}>
-              <Link to="/get-started">
-                <Button variant="outlined" color="secondary" component="span">
-                  Get Started
-                </Button>
-              </Link>
+              <Button
+                variant="outlined"
+                color="secondary"
+                component={LinkRouter}
+                to="/get-started"
+              >
+                Get Started
+              </Button>
             </Box>
           </Box>
         </Box>
