@@ -13,20 +13,26 @@ const Home = () => {
           <Hero />
         </Container>
       </Box>
-      <Container>
-        <Highlights />
-      </Container>
-      <Container>
-        <Features />
-      </Container>
+      <Box>
+        <Container>
+          <Highlights />
+        </Container>
+      </Box>
+      <Box>
+        <Container>
+          <Features />
+        </Container>
+      </Box>
       <Box bgcolor={theme.palette.alternate.main}>
         <Container maxWidth={800}>
           <Rules />
         </Container>
       </Box>
-      <Container>
-        <Partnership />
-      </Container>
+      <Box>
+        <Container>
+          <Partnership />
+        </Container>
+      </Box>
     </Box>
   );
 };
