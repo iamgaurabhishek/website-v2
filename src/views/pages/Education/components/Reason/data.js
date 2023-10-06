@@ -5,4 +5,5 @@ export const concepts = [
   'Machine Leaning (ML)',
   'Internet of Things (IOT)',
   'Application Programming Interfaces (APIs)',
+  'Blockchain',
 ];

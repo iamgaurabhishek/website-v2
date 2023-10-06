@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Link as LinkRouter } from 'react-router-dom';
+import { HashLink as LinkHash } from 'react-router-hash-link';
 
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
@@ -10,7 +10,6 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
 const Hero = () => {
-  const theme = useTheme();
   return (
     <Grid container spacing={4}>
       <Grid item container alignItems={'center'} xs={12} md={6}>
@@ -36,6 +35,14 @@ const Hero = () => {
             A Smart City Development Platform.
           </Typography>
 
+          <Link
+            to={{
+              pathname: '/',
+              hash: '#rules',
+              state: { fromDashboard: true },
+            }}
+          />
+
           <Typography
             variant="h6"
             component="p"
@@ -52,12 +59,7 @@ const Hero = () => {
             sx={{ fontWeight: 400 }}
           >
             View the{' '}
-            <Link
-              color={theme.palette.primary.main}
-              variant="inherit"
-              component={LinkRouter}
-              to="/"
-            >
+            <Link variant="inherit" component={LinkHash} to="/#rules">
               {' '}
               Rules of BrickMMO and Exceptions
             </Link>

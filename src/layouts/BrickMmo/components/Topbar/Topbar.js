@@ -23,22 +23,22 @@ const Topbar = ({ onSidebarOpen }) => {
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box marginRight={2}>
-          <Link to="/" component={LinkRouter}>
+          <Link to="/" component={LinkRouter} underline="none">
             Home
           </Link>
         </Box>
         <Box marginX={2}>
-          <Link to="/education" component={LinkRouter}>
+          <Link to="/education" component={LinkRouter} underline="none">
             Education
           </Link>
         </Box>
         <Box marginX={2}>
-          <Link to="/funding" component={LinkRouter}>
+          <Link to="/funding" component={LinkRouter} underline="none">
             Funding
           </Link>
         </Box>
         <Box marginX={2}>
-          <Link to="/commissions" component={LinkRouter}>
+          <Link to="/commissions" component={LinkRouter} underline="none">
             Commissions
           </Link>
         </Box>

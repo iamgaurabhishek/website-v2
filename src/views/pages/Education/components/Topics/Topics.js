@@ -4,14 +4,14 @@ import Box from '@mui/material/Box';
 
 import SectionImageList from 'common/SectionImageList';
 
-import { links } from './data.js';
+import { topics } from './data.js';
 
-const Links = () => {
+const Topics = () => {
   return (
     <Box>
-      <SectionImageList data={links} folder="/images/topics/" />
+      <SectionImageList data={topics} folder="/images/topics/" />
     </Box>
   );
 };
 
-export default Links;
+export default Topics;
