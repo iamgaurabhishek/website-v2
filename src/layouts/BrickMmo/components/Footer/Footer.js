@@ -78,7 +78,7 @@ const Footer = () => {
                 variant="contained"
                 color="secondary"
                 component={LinkRouter}
-                to="/documentation"
+                to="https://docs.brickmmo.com"
               >
                 Documentation
               </Button>
