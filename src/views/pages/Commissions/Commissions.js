@@ -7,6 +7,7 @@ import Container from 'common/Container';
 
 import {
   Hero,
+  OurWork,
 } from './components';
 
 const Commissions = () => {
@@ -16,6 +17,9 @@ const Commissions = () => {
       <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
         <Container>
           <Hero />
+        </Container>
+        <Container>
+          <OurWork />
         </Container>
       </Box>
     </Box>
