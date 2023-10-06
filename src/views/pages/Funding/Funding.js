@@ -23,6 +23,7 @@ const Funding = () => {
           <Grants />
         </Container>
       </Box>
+      <Box>Added some content!</Box>
     </Box>
   );
 };
