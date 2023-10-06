@@ -1,16 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { Link as LinkRouter } from 'react-router-dom';
 
+import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 
 const SidebarNav = ({ pages, onClose }) => {
+  const theme = useTheme();
+  const [activeLink, setActiveLink] = useState('');
+  useEffect(() => {
+    setActiveLink(window && window.location ? window.location.pathname : '');
+  }, []);
+
   return (
     <Box>
       <Box
@@ -38,10 +45,24 @@ const SidebarNav = ({ pages, onClose }) => {
                 {item.title}
               </Typography>
               <Grid container spacing={1}>
-                {item.pages.map((item, i) => (
+                {item.pages.map((p, i) => (
                   <Grid item xs={6} key={i}>
-                    <Link to={item.href} onClick={() => onClose()}>
-                      <Typography color="textPrimary">{item.title}</Typography>
+                    <Link
+                      variant="body2"
+                      component={LinkRouter}
+                      to={p.href}
+                      color={activeLink === p.href ? 'primary' : 'textPrimary'}
+                      underline={'none'}
+                      sx={{
+                        fontWeight: activeLink === p.href ? 600 : 400,
+                        '&:hover': {
+                          textDecoration: 'none',
+                          color: theme.palette.primary.dark,
+                        },
+                      }}
+                      onClick={() => onClose()}
+                    >
+                      {p.title}
                     </Link>
                   </Grid>
                 ))}
@@ -53,8 +74,8 @@ const SidebarNav = ({ pages, onClose }) => {
           <Button
             variant="outlined"
             fullWidth
-            component="a"
-            href="/docs-introduction"
+            component={LinkRouter}
+            to="/docs-introduction"
           >
             Documentation
           </Button>
@@ -64,9 +85,9 @@ const SidebarNav = ({ pages, onClose }) => {
             variant="contained"
             color="primary"
             fullWidth
-            component="a"
+            component={LinkRouter}
             target="blank"
-            href="https://material-ui.com/store/items/webbee-landing-page/"
+            to="https://material-ui.com/store/items/webbee-landing-page/"
           >
             Purchase now
           </Button>

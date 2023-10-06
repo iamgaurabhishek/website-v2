@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
+import { Link as LinkRouter } from 'react-router-dom';
 
+import Link from '@mui/material/Link';
+import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import Avatar from '@mui/material/Avatar';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
 import SectionFlag from 'common/SectionFlag';
@@ -23,7 +24,7 @@ const Systems = () => {
   return (
     <Box>
       <SectionFlag>Systems</SectionFlag>
-      <SectionTitle>Redeveloping real world systems into BrickMMO</SectionTitle>
+      <SectionTitle>Redeveloping real world systems</SectionTitle>
       <SectionImage src="/images/systems.png" />
       <SectionSubTitle>
         Integrate any of these systems into your BrickMMO smart city:
@@ -59,7 +60,9 @@ const Systems = () => {
                   {item.title}
                 </Box>
                 <Typography color="text.secondary">{item.subtitle}</Typography>
-                <Link marginTop={1}>{item.link.text}</Link>
+                <Link marginTop={1} component={LinkRouter} to={item.link.url}>
+                  {item.link.text}
+                </Link>
                 <Grid container marginTop={1}>
                   {item.technology.map((item) => (
                     <Grid item marginRight={1}>

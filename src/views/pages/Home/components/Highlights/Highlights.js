@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
+
+import Link from '@mui/material/Link';
 import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 
 import SchoolIcon from '@mui/icons-material/School';
 import CodeIcon from '@mui/icons-material/Code';
@@ -30,8 +32,12 @@ const Highlights = () => {
           title: 'Designed for Education',
           subtitle: (
             <Typography>
-              80% of BrickMMO code has been developed by students using a{' '}
-              <Link href="https://wic.brickmmo.com" underline="none">
+              70% of BrickMMO code has been developed by students using a{' '}
+              <Link
+                to="https://wic.brickmmo.com"
+                variant="inherit"
+                component={LinkRouter}
+              >
                 WIC
               </Link>{' '}
               framework.
@@ -39,7 +45,7 @@ const Highlights = () => {
           ),
           link: {
             text: 'Education',
-            url: '/educatiun',
+            url: '/education',
           },
           icon: <SchoolIcon />,
         },
@@ -48,7 +54,7 @@ const Highlights = () => {
           subtitle:
             'Custom interactive experiences built with LEGO® bricks and whole lot of code!',
           link: {
-            text: 'View Projects',
+            text: 'Commissions',
             url: '/commissions',
           },
           icon: <PhotoIcon />,
@@ -82,8 +88,8 @@ const Highlights = () => {
             <Button
               variant="contained"
               color="secondary"
-              component="a"
-              href={item.link.url}
+              component={LinkRouter}
+              to={item.link.url}
             >
               {item.link.text}
             </Button>

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import Box from '@mui/material/Box';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -51,7 +52,7 @@ ExceptionGroupItem.propTypes = {
 
 const Rules = () => {
   return (
-    <Box>
+    <Box id="rules">
       <Box marginBottom={4}>
         <SectionFlag>Rules and Exceptions</SectionFlag>
         <SectionTitle>Rules of BrickMMO</SectionTitle>

@@ -8,8 +8,8 @@ const SectionImage = ({ src }) => (
     flexWrap="wrap"
     justifyContent="center"
     marginX="auto"
-    marginBottom={2}
-    maxWidth={800}
+    marginY={2}
+    maxWidth={600}
   >
     <img src={src} height="100%" width="100%" />
   </Box>

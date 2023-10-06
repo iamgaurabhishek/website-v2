@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import Box from '@mui/material/Box';
+import { Link as LinkRouter } from 'react-router-dom';
+
 import Link from '@mui/material/Link';
+import Box from '@mui/material/Box';
 
 import SectionFlag from 'common/SectionFlag';
 import SectionTitle from 'common/SectionTitle';
@@ -17,15 +19,15 @@ const Partnership = () => {
       <SectionTitle>BrickMMO is a Collaborative Project</SectionTitle>
       <SectionSubTitle>
         BrickMMO is an ongoing collaboration between{' '}
-        <Link href="https://codeadam.ca" underline="none">
+        <Link to="https://codeadam.ca" component={LinkRouter}>
           CodeAdam
         </Link>
         ,{' '}
-        <Link href="https://codeadam.ca" underline="none">
+        <Link to="https://codeadam.ca" component={LinkRouter}>
           Humber College
         </Link>
         , and{' '}
-        <Link href="https://codeadam.ca" underline="none">
+        <Link to="https://codeadam.ca" component={LinkRouter}>
           BrevisRefero
         </Link>
         .

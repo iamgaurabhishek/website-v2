@@ -1,15 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 
+import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 
 const SectionLink = ({ title, href }) => (
-  <Box marginTop={2} display="flex" justifyContent="center">
-    <Link to={href}>
-      <Typography color="textPrimary" size="large" component="span">
-        {title}
-      </Typography>
+  <Box marginY={2} display="flex" justifyContent="center">
+    <Link size="large" component={LinkRouter} to={href}>
+      {title}
     </Link>
   </Box>
 );

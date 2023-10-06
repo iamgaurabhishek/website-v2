@@ -1,10 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -23,44 +23,35 @@ const Topbar = ({ onSidebarOpen }) => {
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box marginRight={2}>
-          <Link to="/">
-            <Typography color="textPrimary" component={'span'}>
-              Home
-            </Typography>
+          <Link to="/" component={LinkRouter}>
+            Home
           </Link>
         </Box>
         <Box marginX={2}>
-          <Link to="/education">
-            <Typography color="textPrimary" component="span">
-              Education
-            </Typography>
+          <Link to="/education" component={LinkRouter}>
+            Education
           </Link>
         </Box>
         <Box marginX={2}>
-          <Link to="/funding">
-            <Typography color="textPrimary" component="span">
-              Funding
-            </Typography>
+          <Link to="/funding" component={LinkRouter}>
+            Funding
           </Link>
         </Box>
         <Box marginX={2}>
-          <Link to="/commissions">
-            <Typography color="textPrimary" component="span">
-              Commissions
-            </Typography>
+          <Link to="/commissions" component={LinkRouter}>
+            Commissions
           </Link>
         </Box>
         <Box marginLeft={2}>
-          <Link to="/getting-started">
-            <Button
-              variant="contained"
-              color="primary"
-              component="span"
-              size="large"
-            >
-              Get Started
-            </Button>
-          </Link>
+          <Button
+            variant="contained"
+            color="primary"
+            component={LinkRouter}
+            size="large"
+            to="/getting-started"
+          >
+            Get Started
+          </Button>
         </Box>
       </Box>
     </Box>

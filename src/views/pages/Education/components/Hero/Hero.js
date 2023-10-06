@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 
+import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
@@ -39,7 +40,7 @@ const Hero = () => {
             sx={{ fontWeight: 400 }}
           >
             View the{' '}
-            <Link component="a" to="https://wic.brickmmo.com" underline="none">
+            <Link component={LinkRouter} to="https://wic.brickmmo.com">
               Workplace Integrated Classroom (WIC)
             </Link>{' '}
             learning framework.

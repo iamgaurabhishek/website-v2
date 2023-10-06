@@ -1,13 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 
+import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
 const Hero = () => {
+  const theme = useTheme();
   return (
     <Grid container spacing={4}>
       <Grid item container alignItems={'center'} xs={12} md={6}>
@@ -39,7 +42,7 @@ const Hero = () => {
             color="textSecondary"
             sx={{ fontWeight: 400 }}
           >
-            Built with only using LEGO<sup>&reg;</sup> bricks.
+            Built with only using LEGO® bricks.
           </Typography>
 
           <Typography
@@ -49,7 +52,13 @@ const Hero = () => {
             sx={{ fontWeight: 400 }}
           >
             View the{' '}
-            <Link component="a" href="#rules" underline="none">
+            <Link
+              color={theme.palette.primary.main}
+              variant="inherit"
+              component={LinkRouter}
+              to="/"
+            >
+              {' '}
               Rules of BrickMMO and Exceptions
             </Link>
             .
@@ -57,28 +66,27 @@ const Hero = () => {
 
           <Box display="flex" flexWrap="wrap" alignItems="center" marginTop={2}>
             <Box marginRight={2}>
-              <Link to="https://docs.brickmmo.com">
-                <Button
-                  color="secondary"
-                  variant="contained"
-                  size="large"
-                  component="span"
-                >
-                  Documentation
-                </Button>
-              </Link>
+              <Button
+                component={LinkRouter}
+                to="https://docs.brickmmo.com"
+                color="secondary"
+                variant="contained"
+                size="large"
+              >
+                {' '}
+                Documentation
+              </Button>
             </Box>
             <Box>
-              <Link to="/get-started">
-                <Button
-                  variant="outlined"
-                  color="secondary"
-                  size="large"
-                  component="span"
-                >
-                  Get Started
-                </Button>
-              </Link>
+              <Button
+                component={LinkRouter}
+                to="/get-started"
+                variant="outlined"
+                color="secondary"
+                size="large"
+              >
+                Get Started
+              </Button>
             </Box>
           </Box>
         </Box>

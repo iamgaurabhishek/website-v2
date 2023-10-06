@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
+import Link from '@mui/material/Link';
 
 const SectionImageList = ({ data, folder }) => (
   <Box
@@ -10,12 +11,12 @@ const SectionImageList = ({ data, folder }) => (
     justifyContent="center"
     maxWidth={800}
     marginX="auto"
-    marginBottom={2}
+    marginY={2}
   >
     {data.map((item, i) => {
       return (
         <Box marginTop={2} marginX={2} key={i}>
-          <Link to={item.url}>
+          <Link to={item.url} component={LinkRouter}>
             <Box
               component="img"
               height="50px"

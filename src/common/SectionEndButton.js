@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -19,19 +19,18 @@ const SectionEndButton = ({ text, href }) => {
       justifyContent="center"
       marginX="auto"
       maxWidth={800}
-      marginBottom={2}
+      marginY={2}
     >
-      <Link to={href}>
-        <Button
-          color="primary"
-          variant="contained"
-          size="large"
-          component="span"
-          fullWidth={isMd ? false : true}
-        >
-          {text}
-        </Button>
-      </Link>
+      <Button
+        color="primary"
+        variant="contained"
+        size="large"
+        component={LinkRouter}
+        fullWidth={isMd ? false : true}
+        to={href}
+      >
+        {text}
+      </Button>
     </Box>
   );
 };
