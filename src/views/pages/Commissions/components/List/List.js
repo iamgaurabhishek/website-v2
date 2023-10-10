@@ -12,6 +12,7 @@ import CardMedia from '@mui/material/CardMedia';
 import SectionFlag from 'common/SectionFlag';
 import SectionTitle from 'common/SectionTitle';
 import SectionSubTitle from 'common/SectionSubTitle';
+import SectionEndButton from 'common/SectionEndButton';
 
 const List = () => {
   return (
@@ -19,7 +20,8 @@ const List = () => {
       <SectionFlag>Commisions</SectionFlag>
       <SectionTitle>Custom build projects </SectionTitle>
       <SectionSubTitle>Check out our current projects:</SectionSubTitle>
-      <Grid container spacing={4}>
+
+      <Grid container spacing={4} marginBottom={4}>
         {[
           {
             media: 'images/commissions/humber.png',
@@ -107,6 +109,8 @@ const List = () => {
           </Grid>
         ))}
       </Grid>
+
+      <SectionEndButton text="Requst a Build" href="/contact" />
     </Box>
   );
 };
