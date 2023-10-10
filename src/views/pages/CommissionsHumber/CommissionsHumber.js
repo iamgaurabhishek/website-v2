@@ -5,10 +5,7 @@ import Box from '@mui/material/Box';
 
 import Container from 'common/Container';
 
-import {
-  Hero,
-  Partnership
-} from './components';
+import { Hero, Partnership } from './components';
 
 const CommissionsHumber = () => {
   const theme = useTheme();
@@ -18,6 +15,8 @@ const CommissionsHumber = () => {
         <Container>
           <Hero />
         </Container>
+      </Box>
+      <Box>
         <Container>
           <Partnership />
         </Container>

@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Link as LinkRouter } from 'react-router-dom';
+// import { Link as LinkRouter } from 'react-router-dom';
 
-import Link from '@mui/material/Link';
+// import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
@@ -30,20 +30,7 @@ const Hero = () => {
               fontWeight: 600,
             }}
           >
-            BrickMMO is designed for education.
-          </Typography>
-
-          <Typography
-            variant="caption"
-            component="p"
-            color="textSecondary"
-            sx={{ fontWeight: 400 }}
-          >
-            View the{' '}
-            <Link component={LinkRouter} to="https://wic.brickmmo.com">
-              Workplace Integrated Classroom (WIC)
-            </Link>{' '}
-            learning framework.
+            Custom interactive builds using the BrickMMO platform.
           </Typography>
         </Box>
       </Grid>
@@ -56,7 +43,7 @@ const Hero = () => {
           alignItems="center"
           maxHeight={600}
         >
-          <img src="/images/education.png" width="100%" height="100%" />
+          <img src="/images/commissions.png" width="100%" height="100%" />
         </Box>
       </Grid>
     </Grid>

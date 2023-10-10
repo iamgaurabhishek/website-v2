@@ -15,7 +15,7 @@ import {
   Commissions as CommissionsView,
   CommissionsCdmo as CommissionsCdmoView,
   CommissionsHumber as CommissionsHumberView,
-  CommissionsLogos as CommissionsLogosView,
+  CommissionsBrevisRefero as CommissionsBrevisRefero,
   Education as EducationView,
   Systems as SystemsView,
   Funding as FundingView,
@@ -129,11 +129,11 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/commissions-logos"
+        path="/commissions-brevisrefero"
         element={((matchProps) => (
           <WithLayout
             {...matchProps}
-            component={CommissionsLogosView}
+            component={CommissionsBrevisRefero}
             layout={BrickMmoLayout}
           />
         ))()}
