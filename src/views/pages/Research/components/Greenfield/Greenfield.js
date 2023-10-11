@@ -15,8 +15,9 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import SectionSubTitle from 'common/SectionSubTitle';
 import SectionEndButton from 'common/SectionEndButton';
 
+import InfoIcon from '@mui/icons-material/Info';
 import HelpIcon from '@mui/icons-material/Help';
-import ArticleIcon from '@mui/icons-material/Article';
+// import ArticleIcon from '@mui/icons-material/Article';
 
 const Greenfield = () => {
   const theme = useTheme();
@@ -29,28 +30,47 @@ const Greenfield = () => {
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
         <Grid item xs={12} md={6}>
           <Box marginBottom={3}>
-            <SectionSubTitle align="left">
-              Cultivate Research &amp; Innovation Fund
-            </SectionSubTitle>
+            <SectionSubTitle align="left">Greenfield Fund</SectionSubTitle>
             <Typography component={'p'} color={'textSecondary'}>
-              Facilitating the Scholarship of Teaching and Learning (SoTL) by
-              supporting faculty research the impact of teaching practices and
-              tools.
+              Facilitating applied research and regional partnerships to respond
+              to the health, economic, and environmental crises brought about by
+              the COVID-19 pandemic and climate change.
             </Typography>
           </Box>
           <List disablePadding>
             {[
               {
+                icon: <InfoIcon />,
+                title: 'Details',
+                subtitle: (
+                  <Typography fontSize="small">
+                    Amount: $60,000
+                    <br />
+                    Dates: Winter 2024
+                  </Typography>
+                ),
+              },
+              {
                 icon: <HelpIcon />,
                 title: 'Research Question',
-                subtitle:
-                  'What will postsecondary student perceptions be when using a LEGO® constructed smart city to simulate real-life application of programming concepts?',
+                subtitle: (
+                  <Typography fontSize="small">
+                    What effect will a revised 20/80 policy have on engaging and
+                    developing existing programming talent?
+                  </Typography>
+                ),
               },
+              /*
               {
                 icon: <ArticleIcon />,
                 title: 'Published',
-                subtitle: 'Published with JIPE. Pending peer review.',
+                subtitle: (
+                  <Typography fontSize="small">
+                    Published with JIPE. Pending peer review.
+                  </Typography>
+                ),
               },
+              */
             ].map((item, index) => (
               <ListItem key={index} disableGutters alignItems="flex-start">
                 <ListItemAvatar>
@@ -69,8 +89,8 @@ const Greenfield = () => {
           </List>
           <SectionEndButton
             align="left"
-            text="More Information"
-            url="https://humber.ca/research/sotl"
+            text="Fund Information"
+            href="https://humber.ca/research/sotl"
           ></SectionEndButton>
         </Grid>
         <Grid

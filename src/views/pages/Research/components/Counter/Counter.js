@@ -29,7 +29,7 @@ const Counter = () => {
         },
         {
           number: 85000,
-          title: 'Research Funds Raised',
+          title: 'Funds Raised',
           subtitle: '$85,000 funds raised from grants and industry.',
           prefix: '$',
         },
