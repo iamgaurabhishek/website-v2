@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 
-const SectionEndButton = ({ text, href }) => {
+const SectionEndButton = ({ text, href, align = 'center' }) => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
@@ -16,7 +16,7 @@ const SectionEndButton = ({ text, href }) => {
     <Box
       display="flex"
       flexWrap="wrap"
-      justifyContent="center"
+      justifyContent={align}
       marginX="auto"
       maxWidth={800}
       marginY={2}

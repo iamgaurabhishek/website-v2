@@ -18,7 +18,7 @@ import {
   CommissionsBrevisRefero as CommissionsBrevisRefero,
   Education as EducationView,
   Systems as SystemsView,
-  Funding as FundingView,
+  Research as ResearchView,
 } from './views/pages';
 
 // Landing pages
@@ -162,11 +162,11 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/funding"
+        path="/research"
         element={((matchProps) => (
           <WithLayout
             {...matchProps}
-            component={FundingView}
+            component={ResearchView}
             layout={BrickMmoLayout}
           />
         ))()}

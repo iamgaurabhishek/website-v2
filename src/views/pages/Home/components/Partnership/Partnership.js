@@ -15,8 +15,8 @@ import { partners } from './data.js';
 const Partnership = () => {
   return (
     <Box>
-      <SectionFlag>PARTNERSHIP</SectionFlag>
-      <SectionTitle>BrickMMO is a Collaborative Project</SectionTitle>
+      <SectionFlag>Partnership</SectionFlag>
+      <SectionTitle>BrickMMO is a collaborative project</SectionTitle>
       <SectionSubTitle>
         BrickMMO is an ongoing collaboration between{' '}
         <Link to="https://codeadam.ca" component={LinkRouter}>

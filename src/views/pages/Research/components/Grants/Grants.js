@@ -15,22 +15,22 @@ import { grants } from './data.js';
 const Grants = () => {
   return (
     <Box>
-      <SectionFlag>PARTNERSHIP</SectionFlag>
-      <SectionTitle>BrickMMO is a Collaborative Project</SectionTitle>
+      <SectionFlag>Grants</SectionFlag>
+      <SectionTitle>Research Funding</SectionTitle>
       <SectionSubTitle>
-        BrickMMO is an ongoing collaboration between{' '}
-        <Link to="https://codeadam.ca" component={LinkRouter}>
-          CodeAdam
+        BrickMMO has received funding from{' '}
+        <Link to="https://humber.ca/research/sotl" component={LinkRouter}>
+          Cultivate
         </Link>
         ,{' '}
         <Link to="https://codeadam.ca" component={LinkRouter}>
-          Humber College
+          Academic Plan Priority 3
         </Link>
         , and{' '}
         <Link to="https://codeadam.ca" component={LinkRouter}>
-          BrevisRefero
-        </Link>
-        .
+          Greenfield
+        </Link>{' '}
+        funds.
       </SectionSubTitle>
 
       <SectionImageList data={grants} />

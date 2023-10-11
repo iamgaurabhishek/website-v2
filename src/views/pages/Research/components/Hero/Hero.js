@@ -23,7 +23,7 @@ const Hero = () => {
                 fontWeight: 700,
               }}
             >
-              Funding
+              Research
             </Typography>
             <Typography
               variant="h4"
@@ -37,7 +37,7 @@ const Hero = () => {
                 component={'span'}
                 variant={'inherit'}
               >
-                $80,000 in research funding raised
+                $85,000 in research funding raised
               </Typography>
             </Typography>
           </Box>
@@ -52,7 +52,11 @@ const Hero = () => {
           alignItems={'center'}
         >
           <Box height={'100%'} width={'100%'} maxHeight={600}>
-            <img src="/images/funding.png" width={'100%'} height={'100%'} />
+            <img
+              src="/images/hero/research.png"
+              width={'100%'}
+              height={'100%'}
+            />
           </Box>
         </Box>
       </Grid>

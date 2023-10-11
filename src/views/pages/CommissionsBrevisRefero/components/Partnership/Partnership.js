@@ -13,8 +13,8 @@ import SectionEndButton from 'common/SectionEndButton';
 const Partnership = () => {
   return (
     <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
-      <SectionFlag>PARTNERSHIP</SectionFlag>
-      <SectionTitle>BrickMMO is a Collaborative Project</SectionTitle>
+      <SectionFlag>Partnership</SectionFlag>
+      <SectionTitle>BrickMMO is a collaborative project</SectionTitle>
       <SectionSubTitle>
         BrickMMO is an ongoing collaboration between{' '}
         <Link to="https://codeadam.ca" component={LinkRouter}>
@@ -30,10 +30,7 @@ const Partnership = () => {
         </Link>
         .
       </SectionSubTitle>
-      <SectionEndButton
-        text="Commissions"
-        href="/commissions"
-      />
+      <SectionEndButton text="Commissions" href="/commissions" />
     </Box>
   );
 };
