@@ -102,7 +102,7 @@ const Hero = () => {
           alignItems="center"
           maxHeight={600}
         >
-          <img src="/images/planet.png" width="100%" height="100%" />
+          <img src="/images/hero/planet.png" width="100%" height="100%" />
         </Box>
       </Grid>
     </Grid>

@@ -18,22 +18,20 @@ const Counter = () => {
     <Grid container spacing={2}>
       {[
         {
-          number: 9,
-          title: 'Paid Positions',
-          subtitle: '9+ paid part time jobs created for students.',
-          suffix: '+',
+          number: 3,
+          title: 'Approved Grants',
+          subtitle: '3 approved grants from three different funds.',
         },
         {
-          number: 70,
-          title: 'Student Contribution',
-          subtitle: '70% of BrickMMO code was written by students.',
-          suffix: '%',
+          number: 3,
+          title: 'Research Papers',
+          subtitle: '3 published peer reviewed research papers.',
         },
         {
-          number: 3000,
-          title: 'Student Hours',
-          subtitle: '3000+ hours of student contributions.',
-          suffix: '+',
+          number: 85000,
+          title: 'Research Funds Raised',
+          subtitle: '$85,000 funds raised from grants and industry.',
+          prefix: '$',
         },
       ].map((item, i) => (
         <Grid key={i} item xs={12} md={4}>
@@ -54,6 +52,7 @@ const Counter = () => {
                 end={viewPortEntered ? item.number : 0}
                 start={0}
                 suffix={item.suffix}
+                prefix={item.prefix}
               />
             </VisibilitySensor>
           </Typography>

@@ -2,9 +2,16 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
-import { Hero, Counter, Grants } from './components';
+import {
+  Hero,
+  Counter,
+  Grants,
+  Cultivate,
+  Greenfield,
+  Priority3,
+} from './components';
 
-const Funding = () => {
+const Research = () => {
   const theme = useTheme();
   return (
     <Box>
@@ -18,14 +25,28 @@ const Funding = () => {
           <Counter />
         </Container>
       </Box>
-      <Box>
+      <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
         <Container>
           <Grants />
         </Container>
       </Box>
-      <Box>Added some content!</Box>
+      <Box>
+        <Container>
+          <Greenfield />
+        </Container>
+      </Box>
+      <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
+        <Container>
+          <Priority3 />
+        </Container>
+      </Box>
+      <Box>
+        <Container>
+          <Cultivate />
+        </Container>
+      </Box>
     </Box>
   );
 };
 
-export default Funding;
+export default Research;

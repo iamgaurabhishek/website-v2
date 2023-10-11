@@ -16,8 +16,8 @@ export const pages = [
         href: '/systems',
       },
       {
-        title: 'Funding',
-        href: '/funding',
+        title: 'Research',
+        href: '/research',
       },
       {
         title: 'Get Started',
