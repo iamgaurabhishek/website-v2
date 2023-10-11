@@ -65,7 +65,7 @@ const Greenfield = () => {
               /*
               {
                 icon: <ArticleIcon />,
-                title: 'Published',
+                title: 'Publishings',
                 subtitle: (
                   <Typography fontSize="small">
                     Published with JIPE. Pending peer review.

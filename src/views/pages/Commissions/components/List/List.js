@@ -96,7 +96,7 @@ const List = () => {
                       size="small"
                       to={item.link}
                     >
-                      Learn More
+                      Project Details
                     </Button>
                   ) : (
                     <Typography variant="body2" color="textPrimary">

@@ -37,7 +37,7 @@ const Hero = () => {
                 component={'span'}
                 variant={'inherit'}
               >
-                $85,000 in research funding raised
+                $85,000 in research funding raised.
               </Typography>
             </Typography>
           </Box>
