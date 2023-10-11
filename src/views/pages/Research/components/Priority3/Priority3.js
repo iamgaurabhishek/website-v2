@@ -69,7 +69,7 @@ const Priority3 = () => {
               },
               {
                 icon: <ArticleIcon />,
-                title: 'Published',
+                title: 'Publishings',
                 subtitle: (
                   <Box>
                     <Typography fontSize="small">
