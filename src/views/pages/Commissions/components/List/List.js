@@ -18,7 +18,7 @@ const List = () => {
   return (
     <Box>
       <SectionFlag>Commisions</SectionFlag>
-      <SectionTitle>Custom build projects </SectionTitle>
+      <SectionTitle>Custom Build Projects </SectionTitle>
       <SectionSubTitle>Check out our current projects:</SectionSubTitle>
 
       <Grid container spacing={4} marginBottom={4}>
