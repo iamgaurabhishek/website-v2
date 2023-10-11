@@ -24,7 +24,7 @@ const Systems = () => {
   return (
     <Box>
       <SectionFlag>Systems</SectionFlag>
-      <SectionTitle>Redeveloping real world systems</SectionTitle>
+      <SectionTitle>Redeveloping Real World Systems</SectionTitle>
       <SectionImage src="/images/systems.png" />
       <SectionSubTitle>
         Integrate any of these systems into your BrickMMO smart city:

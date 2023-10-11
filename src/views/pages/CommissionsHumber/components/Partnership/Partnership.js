@@ -14,7 +14,7 @@ const Partnership = () => {
   return (
     <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
       <SectionFlag>Partnership</SectionFlag>
-      <SectionTitle>BrickMMO is a collaborative project</SectionTitle>
+      <SectionTitle>BrickMMO is a Collaborative Project</SectionTitle>
       <SectionSubTitle>
         BrickMMO is an ongoing collaboration between{' '}
         <Link to="https://codeadam.ca" component={LinkRouter}>

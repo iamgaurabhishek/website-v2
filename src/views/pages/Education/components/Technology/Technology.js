@@ -21,7 +21,7 @@ const Technology = () => {
   return (
     <Box>
       <SectionFlag>Technology</SectionFlag>
-      <SectionTitle>70% of code was written by students</SectionTitle>
+      <SectionTitle>70% of Code was Written by Students</SectionTitle>
       <SectionSubTitle>
         Providing students with experience in many popular programming
         languages, frameworks, and libraries.

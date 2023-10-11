@@ -18,7 +18,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import SectionSubTitle from 'common/SectionSubTitle';
 import SectionEndButton from 'common/SectionEndButton';
 
-import InfoIcon from '@mui/icons-material/Info';
+// import InfoIcon from '@mui/icons-material/Info';
 import HelpIcon from '@mui/icons-material/Help';
 import ArticleIcon from '@mui/icons-material/Article';
 
@@ -43,6 +43,7 @@ const Priority3 = () => {
           </Box>
           <List disablePadding>
             {[
+              /*
               {
                 icon: <InfoIcon />,
                 title: 'Details',
@@ -54,6 +55,7 @@ const Priority3 = () => {
                   </Typography>
                 ),
               },
+              */
               {
                 icon: <HelpIcon />,
                 title: 'Research Question',

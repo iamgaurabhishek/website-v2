@@ -14,7 +14,7 @@ const Test = () => {
   return (
     <Box>
       <SectionFlag>Multi Disciplinary</SectionFlag>
-      <SectionTitle>Cross program collaboration</SectionTitle>
+      <SectionTitle>Cross Program Collaboration</SectionTitle>
       <SectionSubTitle>10+ programs contributing to BrickMMO:</SectionSubTitle>
       <SectionButtonList data={programs} />
       <SectionImageList data={images} />

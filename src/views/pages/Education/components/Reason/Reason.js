@@ -16,7 +16,7 @@ const Reason = () => {
       <SectionFlag>For Education</SectionFlag>
       <SectionImage src="/images/map.png" />
       <SectionTitle>
-        BrickMMO was developed out of a desire to teach code differently
+        BrickMMO was Developed out of a Desire to Teach Code Differently
       </SectionTitle>
       <SectionSubTitle>
         Providing students with a real world sandbox to apply:
