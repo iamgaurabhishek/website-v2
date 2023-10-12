@@ -10,7 +10,7 @@ import SectionTitle from 'common/SectionTitle';
 import SectionSubTitle from 'common/SectionSubTitle';
 import SectionEndButton from 'common/SectionEndButton';
 
-const Partnership = () => {
+const Details = () => {
   return (
     <Box display={'flex'} flexDirection={'column'} alignItems={'center'}>
       <SectionFlag>Partnership</SectionFlag>
@@ -35,4 +35,4 @@ const Partnership = () => {
   );
 };
 
-export default Partnership;
+export default Details;
