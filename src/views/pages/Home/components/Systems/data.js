@@ -6,7 +6,7 @@ export const systems = [
   {
     title: 'GPS',
     subtitle:
-      'A working GPS systems using LEGO® bricks and a Pixy2 camera sensor.',
+      'A working GPS system using LEGO® bricks and a Pixy2 camera sensor.',
     link: {
       text: 'GPS Details',
       url: '/system-gps',

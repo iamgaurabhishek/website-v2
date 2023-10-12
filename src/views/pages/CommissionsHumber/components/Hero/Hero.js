@@ -1,65 +1,43 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Link as LinkRouter } from 'react-router-dom';
 
-import Link from '@mui/material/Link';
+// import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
+// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+// import Grid from '@mui/material/Grid';
 
 const Hero = () => {
-  return (
-    <Grid container spacing={4}>
-      <Grid item container alignItems="center" xs={12} md={6}>
-        <Box>
-          <Typography
-            variant="h2"
-            component="h1"
-            color="textPrimary"
-            sx={{
-              fontWeight: 700,
-            }}
-          >
-            Humber Logo
-          </Typography>
-          <Typography
-            variant="h4"
-            coponent="h2"
-            color="primary"
-            sx={{
-              fontWeight: 600,
-            }}
-          >
-            BrickMMO is designed for education.
-          </Typography>
-
-          <Typography
-            variant="caption"
-            component="p"
-            color="textSecondary"
-            sx={{ fontWeight: 400 }}
-          >
-            View the{' '}
-            <Link component={LinkRouter} to="https://wic.brickmmo.com">
-              Workplace Integrated Classroom (WIC)
-            </Link>{' '}
-            learning framework.
-          </Typography>
-        </Box>
-      </Grid>
-      <Grid item xs={12} md={6}>
-        <Box
-          height="100%"
-          width="100%"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          maxHeight={600}
+  const GridItemHeadlineBlock = () => (
+    <Box>
+      <Typography
+        variant="h2"
+        component="h1"
+        color="#fff"
+        sx={{
+          fontWeight: 700,
+        }}
+      >
+        Humber College Logo
+      </Typography>
+      <Box>
+        <Typography
+          variant="h4"
+          coponent="h2"
+          color="#fff"
+          sx={{
+            fontWeight: 600,
+          }}
         >
-          <img src="/images/hero/education.png" width="100%" height="100%" />
-        </Box>
-      </Grid>
-    </Grid>
+          75cm x 75cm greebled version of the Humber College logo.
+        </Typography>
+      </Box>
+    </Box>
+  );
+
+  return (
+    <Box>
+      <GridItemHeadlineBlock />
+    </Box>
   );
 };
 
