@@ -23,7 +23,11 @@ const Gallery = () => {
       rows: 1,
       cols: 1,
     },
-
+    {
+      src: 'images/commissions/humber-place.png',
+      rows: 2,
+      cols: 2,
+    },
     {
       src: 'images/commissions/humber-specs.png',
       rows: 1,
