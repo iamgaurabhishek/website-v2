@@ -652,6 +652,17 @@ const Routes = () => {
           />
         ))()}
       />
+      <Route
+        path="/privacy-policy"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={PrivacyView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      
     </ReactRoutes>
   );
 };
