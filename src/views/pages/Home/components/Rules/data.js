@@ -41,14 +41,14 @@ export const faqs = [
     subtitle: (
       <Box>
         <Typography component="p" marginBottom={1}>
-          LEGO® hubs need electricty and mobile robots need electricity but must
+          LEGO® hubs need electricity and mobile robots need electricity but must
           be free of cables.
         </Typography>
         <Typography component="p">
           BrickMMO has developed inductive charging adaptors compatible with
-          LEGO® SPIKE™ and MINDSTORMS® hubs. Vew the{' '}
+          LEGO® SPIKE™ and MINDSTORMS® hubs. View the{' '}
           <Link to="/systems-inductive-charging">Inductive Charging</Link>{' '}
-          system for more inforamtion.
+          system for more information.
         </Typography>
       </Box>
     ),
