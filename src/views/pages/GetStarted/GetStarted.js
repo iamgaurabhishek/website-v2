@@ -165,14 +165,14 @@ const GetStarted = () => {
               <Box display="flex" flexWrap="wrap" alignItems="center">
                 <IconButton
                   component={LinkRouter}
-                  to="https://www.instagram.com/brickmo_com"
+                  to="https://www.youtube.com/channel/UCJJPeP10HxC1qwX_paoHepQ"
                   marginRight={1}
                 >
                   <InstagramIcon color="primary" />
                 </IconButton>
                 <IconButton
                   component={LinkRouter}
-                  to="https://www.instagram.com/brickmo_com"
+                  to="https://www.youtube.com/channel/UCJJPeP10HxC1qwX_paoHepQ"
                   marginRight={1}
                 >
                   <YouTubeIcon color="primary" />
