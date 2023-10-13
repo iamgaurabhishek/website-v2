@@ -19,6 +19,7 @@ import {
   Education as EducationView,
   Systems as SystemsView,
   Research as ResearchView,
+  GetStarted as GetStartedView,
 } from './views/pages';
 
 // Landing pages
@@ -167,6 +168,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={ResearchView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/get-started"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={GetStartedView}
             layout={BrickMmoLayout}
           />
         ))()}
