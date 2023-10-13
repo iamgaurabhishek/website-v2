@@ -20,7 +20,7 @@ const Technology = () => {
 
   return (
     <Box>
-      <SectionFlag>Technology</SectionFlag>
+      <SectionFlag>Students</SectionFlag>
       <SectionTitle>70% of Code was Written by Students</SectionTitle>
       <SectionSubTitle>
         Providing students with experience in many popular programming
@@ -43,15 +43,16 @@ const Technology = () => {
         <Grid item xs={12} md={6} container alignItems="center">
           <Box marginBottom={2}>
             <Typography variant="h4" fontWeight={700} gutterBottom>
-              BrickMMO has 50+ online systems
+              BrickMMO has 50+ systems
             </Typography>
             <Typography color="text.secondary" gutterBottom>
               From documentation, to small online tools, admin control panels,
               APIs, CLIs, and this website.
             </Typography>
             <Typography color="text.secondary" marginBottom={2}>
-              Assets use a variety of different technologies ensuring students
-              can contribute from day one.
+              Systems use a variety of different technologies ensuring students
+              can contribute from day one, despite their previous coding
+              experience.
             </Typography>
             <Button
               variant="contained"

@@ -62,7 +62,7 @@ const Priority3 = () => {
                 subtitle: (
                   <Typography fontSize="small">
                     Workplace Integrated Classroom: A Case-Study Review of a New
-                    Pedagogical Aoproach using a Smart City buillt with LEGO®
+                    Pedagogical Approach using a Smart City built with LEGO®
                     Bricks
                   </Typography>
                 ),
