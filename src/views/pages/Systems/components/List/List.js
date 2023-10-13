@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { Link as LinkRouter } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -222,7 +223,9 @@ const List = () => {
                   <Typography color="text.secondary">
                     {item.subtitle}
                   </Typography>
-                  <Link marginTop={1}>{item.link.text}</Link>
+                  <Link marginTop={1} component={LinkRouter} to={item.link.url}>
+                    {item.link.text}
+                  </Link>
                 </Box>
               </Box>
             </Grid>
