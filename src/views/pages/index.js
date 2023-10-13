@@ -6,3 +6,4 @@ export { default as CommissionsHumber } from './CommissionsHumber';
 export { default as CommissionsBrevisRefero } from './CommissionsBrevisRefero';
 export { default as Education } from './Education';
 export { default as Research } from './Research';
+export { default as GetStarted } from './GetStarted';

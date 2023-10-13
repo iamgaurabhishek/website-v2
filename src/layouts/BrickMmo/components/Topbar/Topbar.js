@@ -48,7 +48,7 @@ const Topbar = ({ onSidebarOpen }) => {
             color="primary"
             component={LinkRouter}
             size="large"
-            to="/getting-started"
+            to="/get-started"
           >
             Get Started
           </Button>
