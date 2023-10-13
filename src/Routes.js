@@ -652,6 +652,19 @@ const Routes = () => {
           />
         ))()}
       />
+
+
+      <Route
+        exact
+        path="/systems-suggest"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={SignupSimpleView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
     </ReactRoutes>
   );
 };

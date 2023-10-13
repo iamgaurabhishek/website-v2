@@ -127,18 +127,22 @@ const Form = () => {
           </Grid>
           <Grid item xs={12}>
             <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Enter your password
+              {/* Enter your password */}
+              Describe your idea
             </Typography>
             <TextField
-              label="Password *"
+              // label="Password *"
+              label="Describe your idea"
               variant="outlined"
               name={'password'}
-              type={'password'}
+              // type={'password'}
+              // name={'textarea'}
+              type={'textarea'}
               fullWidth
               value={formik.values.password}
               onChange={formik.handleChange}
-              error={formik.touched.password && Boolean(formik.errors.password)}
-              helperText={formik.touched.password && formik.errors.password}
+              // error={formik.touched.password && Boolean(formik.errors.password)}
+              // helperText={formik.touched.password && formik.errors.password}
             />
           </Grid>
           <Grid item container xs={12}>
@@ -152,7 +156,7 @@ const Form = () => {
               margin={'0 auto'}
             >
               <Box marginBottom={{ xs: 1, sm: 0 }}>
-                <Typography variant={'subtitle2'}>
+                {/* <Typography variant={'subtitle2'}>
                   Already have an account?{' '}
                   <Link
                     component={'a'}
@@ -162,7 +166,7 @@ const Form = () => {
                   >
                     Login.
                   </Link>
-                </Typography>
+                </Typography> */}
               </Box>
               <Button size={'large'} variant={'contained'} type={'submit'}>
                 Sign up
