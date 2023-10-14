@@ -34,7 +34,7 @@ const Highlights = () => {
             <Typography>
               70% of BrickMMO code has been developed by students using a{' '}
               <Link
-                to="https://wic.brickmmo.com"
+                to="https://wic.codeadam.ca"
                 variant="inherit"
                 component={LinkRouter}
               >
