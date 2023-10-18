@@ -130,6 +130,7 @@ const List = () => {
         >
           Have an idea for a system?
         </Typography>
+        {/*
         <Box marginTop={2} display={'flex'} justifyContent={'center'}>
           <Box marginRight={2}>
             <Button
@@ -153,8 +154,9 @@ const List = () => {
             >
               Build a System
             </Button>
-          </Box>
+          </Box>         
         </Box>
+        */}
       </Box>
     </Box>
   );

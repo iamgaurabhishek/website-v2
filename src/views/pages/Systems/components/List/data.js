@@ -18,7 +18,7 @@ export const systems = [
       'A working GPS system using LEGO® bricks and a Pixy2 camera sensor.',
     link: {
       text: 'GPS Details',
-      url: '/system-gps',
+      url: '/systems-gps',
     },
     icon: <SatelliteAltIcon />,
     technology: ['python', 'nodejs'],
@@ -28,7 +28,7 @@ export const systems = [
     subtitle: 'A physical control panel to interact with other systems.',
     link: {
       text: 'Panel Details',
-      url: '/system-panel',
+      url: '/systems-panel',
     },
     icon: <ToggleOnIcon />,
     technology: ['python', 'laravel', 'php'],
@@ -39,7 +39,7 @@ export const systems = [
       'AI generated radio station using OpenAI and Google Text-To-Speech.',
     link: {
       text: 'Radio Details',
-      url: '/system-radio',
+      url: '/systems-radio',
     },
     icon: <RadioIcon />,
     technology: ['nodejs', 'laravel', 'php'],
@@ -50,7 +50,7 @@ export const systems = [
       'A small API to assist other systems in complying with the LEGO® colour palette.',
     link: {
       text: 'Colours Details',
-      url: '/system-colours',
+      url: '/systems-colours',
     },
     icon: <PaletteIcon />,
     technology: ['php', 'mysql'],
@@ -59,8 +59,8 @@ export const systems = [
     title: 'Pixelatte',
     subtitle: 'An image to LEGO® brick conversion tool.',
     link: {
-      text: 'GPS Details',
-      url: '/system-gps',
+      text: 'Pixelatte Details',
+      url: '/systems-pixelatte',
     },
     icon: <ViewModuleIcon />,
     technology: ['html', 'css', 'javascript'],
@@ -70,7 +70,7 @@ export const systems = [
     subtitle: 'A searchable directory of locations in a BrickMMO city.',
     link: {
       text: 'Places Details',
-      url: '/system-places',
+      url: '/systems-places',
     },
     icon: <PlaceIcon />,
     technology: ['php', 'laravel', 'mysql', 'react'],
@@ -81,7 +81,7 @@ export const systems = [
       'A navigation tool allowing visitors to virtually navigate a BrickMMO city.',
     link: {
       text: 'Streetview Details',
-      url: '/system-streetview',
+      url: '/systems-streetview',
     },
     icon: <RouteIcon />,
     technology: ['php', 'laravel', 'mysql', 'react'],
@@ -92,7 +92,7 @@ export const systems = [
       'A Command Line Interface (CLI) tool to manage a BrickMMO city from a terminal.',
     link: {
       text: 'CLI Details',
-      url: '/system-cli',
+      url: '/systems-cli',
     },
     icon: <TerminalIcon />,
     technology: ['python'],
@@ -102,8 +102,8 @@ export const systems = [
     subtitle:
       'Creating custom MINDSTORMS® cables using standard RJ12 connectors and 6P6C cables.',
     link: {
-      text: 'GPS Details',
-      url: '/system-gps',
+      text: 'Custom Cables Details',
+      url: '/systems-cables',
     },
     icon: <CableIcon />,
     technology: [],
@@ -113,8 +113,8 @@ export const systems = [
     subtitle:
       'Inductive charging adaptors compatible with LEGO® SPIKE™ and MINDSTORMS® hubs.',
     link: {
-      text: 'GPS Details',
-      url: '/system-gps',
+      text: 'Inductive Charging Details',
+      url: '/systems-charging',
     },
     icon: <ChargingStationIcon />,
     technology: [],
@@ -123,8 +123,8 @@ export const systems = [
     title: 'Bricker',
     subtitle: 'A Twitter/X like social media website for BrickMMO robots.',
     link: {
-      text: 'GPS Details',
-      url: '/system-gps',
+      text: 'Bricker Details',
+      url: '/systems-bricker',
     },
     icon: <ChatBubbleIcon />,
     technology: ['php', 'laravel', 'mysql'],
@@ -133,8 +133,8 @@ export const systems = [
     title: 'Branding',
     subtitle: 'Assets and guidelines for the BrickMMO brand.',
     link: {
-      text: 'GPS Details',
-      url: '/system-gps',
+      text: 'Branding Details',
+      url: '/systems-branding',
     },
     icon: <TelegramIcon />,
     technology: [],

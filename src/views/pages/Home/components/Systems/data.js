@@ -9,7 +9,7 @@ export const systems = [
       'A working GPS system using LEGO® bricks and a Pixy2 camera sensor.',
     link: {
       text: 'GPS Details',
-      url: '/system-gps',
+      url: '/systems-gps',
     },
     icon: <SatelliteAltIcon />,
     technology: ['python', 'nodejs'],
@@ -19,7 +19,7 @@ export const systems = [
     subtitle: 'A physical control panel to interact with other systems.',
     link: {
       text: 'Panel Details',
-      url: '/system-panel',
+      url: '/systems-panel',
     },
     icon: <ToggleOnIcon />,
     technology: ['python', 'laravel', 'php'],
@@ -30,7 +30,7 @@ export const systems = [
       'AI generated radio station using OpenAI and Google Text-To-Speech.',
     link: {
       text: 'Radio Details',
-      url: '/system-radio',
+      url: '/systems-radio',
     },
     icon: <RadioIcon />,
     technology: ['nodejs', 'laravel', 'php'],
