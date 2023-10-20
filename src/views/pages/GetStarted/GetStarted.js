@@ -15,7 +15,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TikTokIcon from 'svg/logos/TikTok';
 import Container from 'common/Container';
-import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
 
 const GetStarted = () => {
   const theme = useTheme();
@@ -38,7 +37,11 @@ const GetStarted = () => {
               width={'100%'}
               maxWidth={{ xs: 500, md: '100%' }}
             >
-              <TeamWorkingIllustration height={'100%'} width={'100%'} />
+              <img
+                src="images/coming-soon.png"
+                height={'100%'}
+                width={'100%'}
+              />
             </Box>
           </Grid>
           <Grid
@@ -63,82 +66,18 @@ const GetStarted = () => {
                 component="p"
                 color="textSecondary"
                 align={isMd ? 'left' : 'center'}
+                marginBottom={2}
               >
                 We will be inviting other developers to collaborate on the
                 BrickMMO project soon! Signup for our emails newsletter to be
                 notified.
-                <br />
-                We'll be here soon with our new awesome site, subscribe to be
-                notified.
               </Typography>
-              {/* <Box
-                display="flex"
-                flexDirection={'row'}
-                justifyContent={'space-around'}
-                marginY={2}
-              >
-                <Box
-                  display="flex"
-                  flexDirection={'column'}
-                  alignItems={'center'}
-                >
-                  <Typography
-                    variant={'h4'}
-                    sx={{ fontWeight: 700 }}
-                    color="primary"
-                  >
-                    13
-                  </Typography>
-                  <Typography>Days</Typography>
-                </Box>
-                <Box
-                  display="flex"
-                  flexDirection={'column'}
-                  alignItems={'center'}
-                >
-                  <Typography
-                    variant={'h4'}
-                    sx={{ fontWeight: 700 }}
-                    color="primary"
-                  >
-                    09
-                  </Typography>
-                  <Typography>Hours</Typography>
-                </Box>
-                <Box
-                  display="flex"
-                  flexDirection={'column'}
-                  alignItems={'center'}
-                >
-                  <Typography
-                    variant={'h4'}
-                    sx={{ fontWeight: 700 }}
-                    color="primary"
-                  >
-                    {minutes}
-                  </Typography>
-                  <Typography>Mins</Typography>
-                </Box>
-                <Box
-                  display="flex"
-                  flexDirection={'column'}
-                  alignItems={'center'}
-                >
-                  <Typography
-                    variant={'h4'}
-                    sx={{ fontWeight: 700 }}
-                    color="primary"
-                  >
-                    {seconds}
-                  </Typography>
-                  <Typography>Secs</Typography>
-                </Box>
-              </Box> */}
               <form noValidate autoComplete="off">
                 <Box
                   display="flex"
                   flexDirection={{ xs: 'column', sm: 'row' }}
                   alignItems={{ xs: 'stretched', sm: 'flex-start' }}
+                  marginBottom={2}
                 >
                   <Box
                     flex={'1 1 auto'}
