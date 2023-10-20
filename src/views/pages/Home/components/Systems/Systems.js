@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import { Link as LinkRouter } from 'react-router-dom';
+// import { Link as LinkRouter } from 'react-router-dom';
 
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -71,6 +71,7 @@ const Systems = () => {
                   ))}
                 </Grid>
 
+                {/*
                 <Box marginTop={1}>
                   <Button
                     color="primary"
@@ -81,6 +82,7 @@ const Systems = () => {
                     {item.link.text}
                   </Button>
                 </Box>
+                  */}
               </Box>
             </Box>
           </Grid>
