@@ -5,7 +5,7 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
@@ -46,7 +46,7 @@ const SidebarNav = ({ pages, onClose }) => {
               </Typography>
               <Grid container spacing={1}>
                 {item.pages.map((p, i) => (
-                  <Grid item xs={6} key={i}>
+                  <Grid item xs={12} key={i}>
                     <Link
                       variant="body2"
                       component={LinkRouter}
@@ -69,28 +69,6 @@ const SidebarNav = ({ pages, onClose }) => {
               </Grid>
             </Box>
           ))}
-        </Box>
-        <Box>
-          <Button
-            variant="outlined"
-            fullWidth
-            component={LinkRouter}
-            to="/docs-introduction"
-          >
-            Documentation
-          </Button>
-        </Box>
-        <Box marginTop={1}>
-          <Button
-            variant="contained"
-            color="primary"
-            fullWidth
-            component={LinkRouter}
-            target="blank"
-            to="https://material-ui.com/store/items/webbee-landing-page/"
-          >
-            Purchase now
-          </Button>
         </Box>
       </Box>
     </Box>

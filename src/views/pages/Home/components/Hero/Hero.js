@@ -32,7 +32,7 @@ const Hero = () => {
               fontWeight: 600,
             }}
           >
-            A Smart City Development Platform.
+            A Smart City Education Platform.
           </Typography>
 
           <Link
@@ -67,6 +67,7 @@ const Hero = () => {
           </Typography>
 
           <Box display="flex" flexWrap="wrap" alignItems="center" marginTop={2}>
+            {/*
             <Box marginRight={2}>
               <Button
                 component={LinkRouter}
@@ -79,6 +80,7 @@ const Hero = () => {
                 Documentation
               </Button>
             </Box>
+            */}
             <Box>
               <Button
                 component={LinkRouter}
