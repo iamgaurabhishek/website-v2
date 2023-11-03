@@ -20,6 +20,7 @@ import {
   Systems as SystemsView,
   Research as ResearchView,
   GetStarted as GetStartedView,
+  BrevisRefero as BrevisReferoView,
 } from './views/pages';
 
 // Landing pages
@@ -179,6 +180,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={GetStartedView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/brevisrefero"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={BrevisReferoView}
             layout={BrickMmoLayout}
           />
         ))()}
@@ -652,7 +664,6 @@ const Routes = () => {
           />
         ))()}
       />
-
 
       <Route
         exact
