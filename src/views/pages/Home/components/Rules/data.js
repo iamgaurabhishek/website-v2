@@ -41,14 +41,14 @@ export const faqs = [
     subtitle: (
       <Box>
         <Typography component="p" marginBottom={1}>
-          LEGO® hubs need electricty and mobile robots need electricity but must
-          be free of cables.
+          LEGO® hubs need electricity and mobile robots need electricity but
+          must be free of cables.
         </Typography>
         <Typography component="p">
           BrickMMO has developed inductive charging adaptors compatible with
-          LEGO® SPIKE™ and MINDSTORMS® hubs. Vew the{' '}
+          LEGO® SPIKE™ and MINDSTORMS® hubs. View the{' '}
           <Link to="/systems-inductive-charging">Inductive Charging</Link>{' '}
-          system for more inforamtion.
+          system for more information.
         </Typography>
       </Box>
     ),
@@ -60,7 +60,7 @@ export const faqs = [
         <Typography component="p" marginBottom={2}>
           We need cables. And we need long cables. Using standard RJ12
           connectors and 6P6C cables we can create custom length MINDSTORMS®
-          compatible cables. Vew the{' '}
+          compatible cables. View the{' '}
           <Link to="/systems-inductive-charging">Custom Cables</Link> system for
           more information.
         </Typography>

@@ -7,3 +7,4 @@ export { default as CommissionsBrevisRefero } from './CommissionsBrevisRefero';
 export { default as Education } from './Education';
 export { default as Research } from './Research';
 export { default as GetStarted } from './GetStarted';
+export { default as BrevisRefero } from './BrevisRefero';

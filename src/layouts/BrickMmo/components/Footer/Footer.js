@@ -73,6 +73,7 @@ const Footer = () => {
           </Box>
 
           <Box display="flex" flexWrap="wrap" alignItems="center">
+            {/*
             <Box marginTop={1} marginRight={2}>
               <Button
                 variant="contained"
@@ -83,6 +84,7 @@ const Footer = () => {
                 Documentation
               </Button>
             </Box>
+            */}
             <Box marginTop={1}>
               <Button
                 variant="outlined"
