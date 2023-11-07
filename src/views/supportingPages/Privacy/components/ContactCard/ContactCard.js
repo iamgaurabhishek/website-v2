@@ -3,6 +3,7 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
+import { Link } from 'react-router-dom';
 
 const ContactCard = () => {
   const theme = useTheme();
@@ -40,7 +41,9 @@ const ContactCard = () => {
           contact us.
         </Typography>
         <Typography variant={'subtitle2'}>
-          hi@maccarianagency.com
+          <Link to='/contact'>
+            hi@maccarianagency.com
+          </Link>
           <br />
           via Gola 4
           <br />

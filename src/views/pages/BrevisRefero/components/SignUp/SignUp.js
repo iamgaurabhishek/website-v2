@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useTheme } from '@mui/material/styles';
-
+import validator from 'validator';
 import { Link as LinkRouter } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 
@@ -22,6 +22,37 @@ const SignUp = () => {
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
+  
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
+
+  const checkName = () => {
+    if(!name) {
+      setNameError('Name cannot be empty');
+      return false;
+    }
+    setNameError('');
+    return true;
+  };
+
+  const checkEmail = () => {
+    if(!email) {
+      setEmailError('Email cannot be empty');
+      return false;
+    }
+    if(!validator.isEmail(email)) {
+      setEmailError('Please enter a valid email');
+      return false;
+    }
+    setEmailError('');
+    return true;
+  };
+
+  const handleSubmitButton = () => {
+    console.log('handle click event for the button here');
+  };
 
   return (
     <Box>
@@ -68,7 +99,12 @@ const SignUp = () => {
                 variant="outlined"
                 color="primary"
                 fullWidth
-                marginBottom={2}
+                marginBottom={4}
+                error={nameError !== ''}
+                helperText={nameError}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                onBlur={checkName}
               />
               <Box
                 component={TextField}
@@ -76,14 +112,21 @@ const SignUp = () => {
                 variant="outlined"
                 color="primary"
                 fullWidth
-                marginBottom={2}
+                marginBottom={4}
+                error={emailError !== ''}
+                helperText={emailError}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                onBlur={checkEmail}
               />
               <Box
                 component={Button}
                 variant="contained"
                 color="primary"
                 size="large"
-                marginBottom={2}
+                marginBottom={4}
+                disabled={!name || !email || nameError !== '' || emailError !== ''}
+                onClick={() => handleSubmitButton()}
               >
                 Submit
               </Box>

@@ -712,6 +712,16 @@ const Routes = () => {
         path="/privacy-policy"
         element={((matchProps) => (
           <WithLayout
+            {...matchProps}
+            component={PrivacyView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        path="/privacy-policy"
+        element={((matchProps) => (
+          <WithLayout
             title='privacy policy'
             {...matchProps}
             component={PrivacyView}
