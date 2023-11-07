@@ -45,10 +45,14 @@ export const useDarkMode = () => {
 };
 
 export default function WithLayout({
+  title: title,
   component: Component,
   layout: Layout,
   ...rest
 }) {
+  useEffect(() => {
+    document.title = title + ' | BrickMMO';
+  }, [title]);
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
