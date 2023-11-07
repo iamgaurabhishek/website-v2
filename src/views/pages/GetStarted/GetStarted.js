@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, {useState} from 'react';
+import validator from 'validator';
 import { Link as LinkRouter } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
 import TextField from '@mui/material/TextField';
@@ -21,6 +22,27 @@ const GetStarted = () => {
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
+
+  // STATES
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
+
+  const checkEmail = () => {
+    if(!email) {
+      setError('Email cannot be empty');
+      return false;
+    }
+    if(!validator.isEmail(email)) {
+      setError('Please enter a valid email');
+      return false;
+    }
+    setError('');
+    return true;
+  };
+
+  const handleSubmitButton = () => {
+    console.log('handle click event for the button here');
+  };
 
   return (
     <Box
@@ -77,7 +99,7 @@ const GetStarted = () => {
                   display="flex"
                   flexDirection={{ xs: 'column', sm: 'row' }}
                   alignItems={{ xs: 'stretched', sm: 'flex-start' }}
-                  marginBottom={2}
+                  marginBottom={4}
                 >
                   <Box
                     flex={'1 1 auto'}
@@ -87,6 +109,11 @@ const GetStarted = () => {
                     color="primary"
                     fullWidth
                     height={54}
+                    error={error !== ''}
+                    helperText={error}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    onBlur={checkEmail}
                   />
                   <Box
                     component={Button}
@@ -96,6 +123,8 @@ const GetStarted = () => {
                     height={54}
                     marginTop={{ xs: 2, sm: 0 }}
                     marginLeft={{ sm: 2 }}
+                    disabled={!email || error !== ''}
+                    onClick={() => handleSubmitButton()}
                   >
                     Subscribe
                   </Box>
