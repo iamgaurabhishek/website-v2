@@ -9,7 +9,7 @@ import Container from 'common/Container';
 
 import { Hero, Benefits, SignUp } from './components';
 
-const BrevisRevero = () => {
+const Bio = () => {
   const theme = useTheme();
 
   return (
@@ -68,4 +68,4 @@ const BrevisRevero = () => {
   );
 };
 
-export default BrevisRevero;
+export default Bio;

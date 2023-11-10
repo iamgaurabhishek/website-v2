@@ -20,6 +20,7 @@ import {
   Systems as SystemsView,
   Research as ResearchView,
   GetStarted as GetStartedView,
+  Bio as BioView,
 } from './views/pages';
 
 // Landing pages
@@ -98,10 +99,22 @@ const Routes = () => {
       />
       <Route
         exact
+        path="/bio"
+        element={((matchProps) => (
+          <WithLayout
+            title="Bio 2024"
+            {...matchProps}
+            component={BioView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
         path="/commissions"
         element={((matchProps) => (
           <WithLayout
-            title='commissions'
+            title="commissions"
             {...matchProps}
             component={CommissionsView}
             layout={BrickMmoLayout}
@@ -113,7 +126,7 @@ const Routes = () => {
         path="/commissions-humber"
         element={((matchProps) => (
           <WithLayout
-            title='humber'
+            title="humber"
             {...matchProps}
             component={CommissionsHumberView}
             layout={BrickMmoLayout}
@@ -125,7 +138,7 @@ const Routes = () => {
         path="/commissions-cdmo"
         element={((matchProps) => (
           <WithLayout
-            title='cdmo'
+            title="cdmo"
             {...matchProps}
             component={CommissionsCdmoView}
             layout={BrickMmoLayout}
@@ -137,7 +150,7 @@ const Routes = () => {
         path="/commissions-brevisrefero"
         element={((matchProps) => (
           <WithLayout
-            title='brevisrefero'
+            title="brevisrefero"
             {...matchProps}
             component={CommissionsBrevisRefero}
             layout={BrickMmoLayout}
@@ -149,7 +162,7 @@ const Routes = () => {
         path="/education"
         element={((matchProps) => (
           <WithLayout
-            title='education'
+            title="education"
             {...matchProps}
             component={EducationView}
             layout={BrickMmoLayout}
@@ -161,7 +174,7 @@ const Routes = () => {
         path="/systems"
         element={((matchProps) => (
           <WithLayout
-            title='systems'
+            title="systems"
             {...matchProps}
             component={SystemsView}
             layout={BrickMmoLayout}
@@ -173,7 +186,7 @@ const Routes = () => {
         path="/research"
         element={((matchProps) => (
           <WithLayout
-            title='research'
+            title="research"
             {...matchProps}
             component={ResearchView}
             layout={BrickMmoLayout}
@@ -185,7 +198,7 @@ const Routes = () => {
         path="/get-started"
         element={((matchProps) => (
           <WithLayout
-            title='get started'
+            title="get started"
             {...matchProps}
             component={GetStartedView}
             layout={BrickMmoLayout}
@@ -198,7 +211,7 @@ const Routes = () => {
         path="/landing-advertisement"
         element={((matchProps) => (
           <WithLayout
-            title='landing advertisement'
+            title="landing advertisement"
             {...matchProps}
             component={AdvertisementView}
             layout={MainLayout}
@@ -210,7 +223,7 @@ const Routes = () => {
         path="/landing-payment-app"
         element={((matchProps) => (
           <WithLayout
-            title='landing payment app'
+            title="landing payment app"
             {...matchProps}
             component={PaymentAppView}
             layout={MainLayout}
@@ -222,7 +235,7 @@ const Routes = () => {
         path="/landing-marketing"
         element={((matchProps) => (
           <WithLayout
-            title='landing marketing'
+            title="landing marketing"
             {...matchProps}
             component={MarketingView}
             layout={MainLayout}
@@ -234,7 +247,7 @@ const Routes = () => {
         path="/landing-software-company"
         element={((matchProps) => (
           <WithLayout
-            title='landing software company'
+            title="landing software company"
             {...matchProps}
             component={SoftwareView}
             layout={MainLayout}
@@ -246,7 +259,7 @@ const Routes = () => {
         path="/landing-course"
         element={((matchProps) => (
           <WithLayout
-            title='landing course'
+            title="landing course"
             {...matchProps}
             component={CourseView}
             layout={MainLayout}
@@ -258,7 +271,7 @@ const Routes = () => {
         path="/landing-crypto"
         element={((matchProps) => (
           <WithLayout
-            title='landing crypto'
+            title="landing crypto"
             {...matchProps}
             component={CryptoView}
             layout={MainLayout}
@@ -270,7 +283,7 @@ const Routes = () => {
         path="/landing-design-agency"
         element={((matchProps) => (
           <WithLayout
-            title='landing design agency'
+            title="landing design agency"
             {...matchProps}
             component={DesignAgencyView}
             layout={MainLayout}
@@ -282,7 +295,7 @@ const Routes = () => {
         path="/landing-consulting"
         element={((matchProps) => (
           <WithLayout
-            title='landing consulting'
+            title="landing consulting"
             {...matchProps}
             component={ConsultingView}
             layout={MainLayout}
@@ -294,7 +307,7 @@ const Routes = () => {
         path="/landing-application"
         element={((matchProps) => (
           <WithLayout
-            title='landing application'
+            title="landing application"
             {...matchProps}
             component={ApplicationView}
             layout={MainLayout}
@@ -306,7 +319,7 @@ const Routes = () => {
         path="/landing-domain-hosting"
         element={((matchProps) => (
           <WithLayout
-            title='landing domain hosting'
+            title="landing domain hosting"
             {...matchProps}
             component={DomainHostingView}
             layout={MainLayout}
@@ -318,7 +331,7 @@ const Routes = () => {
         path="/landing-travel"
         element={((matchProps) => (
           <WithLayout
-            title='landing travel'
+            title="landing travel"
             {...matchProps}
             component={TravelView}
             layout={MainLayout}
@@ -330,7 +343,7 @@ const Routes = () => {
         path="/landing-event"
         element={((matchProps) => (
           <WithLayout
-            title='landing event'
+            title="landing event"
             {...matchProps}
             component={EventView}
             layout={MainLayout}
@@ -342,7 +355,7 @@ const Routes = () => {
         path="/page-about"
         element={((matchProps) => (
           <WithLayout
-            title='about'
+            title="about"
             {...matchProps}
             component={AboutView}
             layout={MainLayout}
@@ -354,7 +367,7 @@ const Routes = () => {
         path="/page-services"
         element={((matchProps) => (
           <WithLayout
-            title='services'
+            title="services"
             {...matchProps}
             component={ServicesView}
             layout={MainLayout}
@@ -366,7 +379,7 @@ const Routes = () => {
         path="/page-contact"
         element={((matchProps) => (
           <WithLayout
-            title='contact'
+            title="contact"
             {...matchProps}
             component={ContactView}
             layout={MainLayout}
@@ -378,7 +391,7 @@ const Routes = () => {
         path="/page-pricing"
         element={((matchProps) => (
           <WithLayout
-            title='pricing'
+            title="pricing"
             {...matchProps}
             component={PricingView}
             layout={MainLayout}
@@ -390,7 +403,7 @@ const Routes = () => {
         path="/page-customers"
         element={((matchProps) => (
           <WithLayout
-            title='customers'
+            title="customers"
             {...matchProps}
             component={CustomersView}
             layout={MainLayout}
@@ -402,7 +415,7 @@ const Routes = () => {
         path="/page-hire-us"
         element={((matchProps) => (
           <WithLayout
-            title='hire us'
+            title="hire us"
             {...matchProps}
             component={HireUsView}
             layout={MainLayout}
@@ -413,8 +426,8 @@ const Routes = () => {
         exact
         path="/page-faq"
         element={((matchProps) => (
-          <WithLayout 
-            title='faq'
+          <WithLayout
+            title="faq"
             {...matchProps}
             component={FaqView}
             layout={MainLayout}
@@ -426,7 +439,7 @@ const Routes = () => {
         path="/page-privacy"
         element={((matchProps) => (
           <WithLayout
-            title='privacy'
+            title="privacy"
             {...matchProps}
             component={PrivacyView}
             layout={MainLayout}
@@ -438,7 +451,7 @@ const Routes = () => {
         path="/page-coming-soon"
         element={((matchProps) => (
           <WithLayout
-            title='coming soon'
+            title="coming soon"
             {...matchProps}
             component={ComingSoonView}
             layout={MainLayout}
@@ -450,7 +463,7 @@ const Routes = () => {
         path="/page-maintenance-mode"
         element={((matchProps) => (
           <WithLayout
-            title='maintenance mode'
+            title="maintenance mode"
             {...matchProps}
             component={MaintenanceModeView}
             layout={MainLayout}
@@ -462,7 +475,7 @@ const Routes = () => {
         path="/page-cover"
         element={((matchProps) => (
           <WithLayout
-            title='cover'
+            title="cover"
             {...matchProps}
             component={CoverView}
             layout={MainLayout}
@@ -474,7 +487,7 @@ const Routes = () => {
         path="/page-login"
         element={((matchProps) => (
           <WithLayout
-            title='login'
+            title="login"
             {...matchProps}
             component={LoginView}
             layout={FluidLayout}
@@ -486,7 +499,7 @@ const Routes = () => {
         path="/page-login-simple"
         element={((matchProps) => (
           <WithLayout
-            title='login simple'
+            title="login simple"
             {...matchProps}
             component={LoginSimpleView}
             layout={MainLayout}
@@ -498,7 +511,7 @@ const Routes = () => {
         path="/page-signup"
         element={((matchProps) => (
           <WithLayout
-            title='signup'
+            title="signup"
             {...matchProps}
             component={SignupView}
             layout={FluidLayout}
@@ -510,7 +523,7 @@ const Routes = () => {
         path="/page-signup-simple"
         element={((matchProps) => (
           <WithLayout
-            title='signup simple'
+            title="signup simple"
             {...matchProps}
             component={SignupSimpleView}
             layout={MainLayout}
@@ -522,7 +535,7 @@ const Routes = () => {
         path="/page-forgot-password"
         element={((matchProps) => (
           <WithLayout
-            title='forgot password'
+            title="forgot password"
             {...matchProps}
             component={ForgotPasswordView}
             layout={FluidLayout}
@@ -534,7 +547,7 @@ const Routes = () => {
         path="/page-forgot-password-simple"
         element={((matchProps) => (
           <WithLayout
-            title='forgot password simple'
+            title="forgot password simple"
             {...matchProps}
             component={ForgotPasswordSimpleView}
             layout={MainLayout}
@@ -546,7 +559,7 @@ const Routes = () => {
         path="/docs-introduction"
         element={((matchProps) => (
           <WithLayout
-            title='introduction'
+            title="introduction"
             {...matchProps}
             component={IntroductionView}
             layout={FixedLayout}
@@ -558,7 +571,7 @@ const Routes = () => {
         path="/docs-quick-start"
         element={((matchProps) => (
           <WithLayout
-            title='quick start'
+            title="quick start"
             {...matchProps}
             component={QuickStartView}
             layout={FixedLayout}
@@ -570,7 +583,7 @@ const Routes = () => {
         path="/docs-colors"
         element={((matchProps) => (
           <WithLayout
-            title='colors'
+            title="colors"
             {...matchProps}
             component={ColorsView}
             layout={FixedLayout}
@@ -582,7 +595,7 @@ const Routes = () => {
         path="/docs-typography"
         element={((matchProps) => (
           <WithLayout
-            title='typography'
+            title="typography"
             {...matchProps}
             component={TypographyComponentView}
             layout={FixedLayout}
@@ -594,7 +607,7 @@ const Routes = () => {
         path="/docs-shadows"
         element={((matchProps) => (
           <WithLayout
-            title='shadows'
+            title="shadows"
             {...matchProps}
             component={ShadowsView}
             layout={FixedLayout}
@@ -606,7 +619,7 @@ const Routes = () => {
         path="/docs-container"
         element={((matchProps) => (
           <WithLayout
-            title='container'
+            title="container"
             {...matchProps}
             component={ContainerComponentView}
             layout={FixedLayout}
@@ -618,7 +631,7 @@ const Routes = () => {
         path="/docs-layouts"
         element={((matchProps) => (
           <WithLayout
-            title='layouts'
+            title="layouts"
             {...matchProps}
             component={LayoutsView}
             layout={FixedLayout}
@@ -630,7 +643,7 @@ const Routes = () => {
         path="/docs-plugins"
         element={((matchProps) => (
           <WithLayout
-            title='plugins'
+            title="plugins"
             {...matchProps}
             component={PluginsView}
             layout={FixedLayout}
@@ -642,7 +655,7 @@ const Routes = () => {
         path="/docs-icons"
         element={((matchProps) => (
           <WithLayout
-            title='icons'
+            title="icons"
             {...matchProps}
             component={IconsView}
             layout={FixedLayout}
@@ -654,7 +667,7 @@ const Routes = () => {
         path="/docs-illustrations"
         element={((matchProps) => (
           <WithLayout
-            title='illustrations'
+            title="illustrations"
             {...matchProps}
             component={IllustrationsView}
             layout={FixedLayout}
@@ -666,7 +679,7 @@ const Routes = () => {
         path="/docs-support"
         element={((matchProps) => (
           <WithLayout
-            title='support'
+            title="support"
             {...matchProps}
             component={SupportView}
             layout={FixedLayout}
@@ -678,7 +691,7 @@ const Routes = () => {
         path="/docs-change-log"
         element={((matchProps) => (
           <WithLayout
-            title='change log'
+            title="change log"
             {...matchProps}
             component={ChangeLogView}
             layout={FixedLayout}
@@ -690,7 +703,7 @@ const Routes = () => {
         path="/page-not-found"
         element={((matchProps) => (
           <WithLayout
-            title='not found'
+            title="not found"
             {...matchProps}
             component={NotFoundView}
             layout={MainLayout}
@@ -701,7 +714,7 @@ const Routes = () => {
         path="*"
         element={((matchProps) => (
           <WithLayout
-            title='all'
+            title="all"
             {...matchProps}
             component={NotFoundView}
             layout={MainLayout}
@@ -722,14 +735,13 @@ const Routes = () => {
         path="/privacy-policy"
         element={((matchProps) => (
           <WithLayout
-            title='privacy policy'
+            title="privacy policy"
             {...matchProps}
             component={PrivacyView}
             layout={BrickMmoLayout}
           />
         ))()}
       />
-      
     </ReactRoutes>
   );
 };
