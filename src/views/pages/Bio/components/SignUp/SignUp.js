@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { useTheme } from '@mui/material/styles';
 import validator from 'validator';
 import { Link as LinkRouter } from 'react-router-dom';
@@ -22,14 +22,14 @@ const SignUp = () => {
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
-  
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
 
   const checkName = () => {
-    if(!name) {
+    if (!name) {
       setNameError('Name cannot be empty');
       return false;
     }
@@ -38,11 +38,11 @@ const SignUp = () => {
   };
 
   const checkEmail = () => {
-    if(!email) {
+    if (!email) {
       setEmailError('Email cannot be empty');
       return false;
     }
-    if(!validator.isEmail(email)) {
+    if (!validator.isEmail(email)) {
       setEmailError('Please enter a valid email');
       return false;
     }
@@ -125,7 +125,9 @@ const SignUp = () => {
                 color="primary"
                 size="large"
                 marginBottom={4}
-                disabled={!name || !email || nameError !== '' || emailError !== ''}
+                disabled={
+                  !name || !email || nameError !== '' || emailError !== ''
+                }
                 onClick={() => handleSubmitButton()}
               >
                 Submit
@@ -134,7 +136,7 @@ const SignUp = () => {
             <Box display="flex" flexWrap="wrap" alignItems="center">
               <IconButton
                 component={LinkRouter}
-                to="https://www.youtube.com/channel/UCJJPeP10HxC1qwX_paoHepQ"
+                to="https://www.instagram.com/brickmmo"
                 marginRight={1}
               >
                 <InstagramIcon color="primary" />
