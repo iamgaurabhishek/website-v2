@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import validator from 'validator';
 import { Link as LinkRouter } from 'react-router-dom';
 import { useTheme } from '@mui/material/styles';
@@ -16,6 +16,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TikTokIcon from 'svg/logos/TikTok';
 import Container from 'common/Container';
+import { light as lightGreen } from 'theme/palette--green';
+import axios from 'axios';
 
 const GetStarted = () => {
   const theme = useTheme();
@@ -26,13 +28,14 @@ const GetStarted = () => {
   // STATES
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+  const [thankYouMessage, setThankYouMessage] = useState('');
 
   const checkEmail = () => {
-    if(!email) {
+    if (!email) {
       setError('Email cannot be empty');
       return false;
     }
-    if(!validator.isEmail(email)) {
+    if (!validator.isEmail(email)) {
       setError('Please enter a valid email');
       return false;
     }
@@ -40,8 +43,28 @@ const GetStarted = () => {
     return true;
   };
 
-  const handleSubmitButton = () => {
-    console.log('handle click event for the button here');
+  const handleSubmitButton = async () => {
+    try {
+      const response = await axios.post(
+        `${process.env.REACT_APP_BASEURL}/email/send`,
+        {
+          name: 'Getting Started Submission Form',
+          email,
+        },
+      );
+      const { data } = response;
+      setThankYouMessage(data?.message);
+      renderThankYouMessage();
+      setEmail('');
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const renderThankYouMessage = () => {
+    setTimeout(() => {
+      setThankYouMessage('');
+    }, 5000);
   };
 
   return (
@@ -130,6 +153,15 @@ const GetStarted = () => {
                   </Box>
                 </Box>
               </form>
+              {thankYouMessage.length > 0 && (
+                <Typography
+                  component="p"
+                  color={lightGreen?.primary?.dark}
+                  marginBottom={2}
+                >
+                  {thankYouMessage}
+                </Typography>
+              )}
               <Box display="flex" flexWrap="wrap" alignItems="center">
                 <IconButton
                   component={LinkRouter}

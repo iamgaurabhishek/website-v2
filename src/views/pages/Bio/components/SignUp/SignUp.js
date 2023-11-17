@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import { useTheme } from '@mui/material/styles';
 import validator from 'validator';
 import { Link as LinkRouter } from 'react-router-dom';
+import { light as lightGreen } from '../../../../../theme/palette--green';
 import TextField from '@mui/material/TextField';
 
 import Box from '@mui/material/Box';
@@ -27,6 +29,7 @@ const SignUp = () => {
   const [email, setEmail] = useState('');
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
+  const [thankYouMessage, setThankYouMessage] = useState('');
 
   const checkName = () => {
     if (!name) {
@@ -50,8 +53,29 @@ const SignUp = () => {
     return true;
   };
 
-  const handleSubmitButton = () => {
-    console.log('handle click event for the button here');
+  const handleSubmitButton = async () => {
+    try {
+      const response = await axios.post(
+        `${process.env.REACT_APP_BASEURL}/email/send`,
+        {
+          name,
+          email,
+        },
+      );
+      const { data } = response;
+      setThankYouMessage(data?.message);
+      renderThankYouMessage();
+      setEmail('');
+      setName('');
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const renderThankYouMessage = () => {
+    setTimeout(() => {
+      setThankYouMessage('');
+    }, 5000);
   };
 
   return (
@@ -119,6 +143,15 @@ const SignUp = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 onBlur={checkEmail}
               />
+              {thankYouMessage?.length > 0 && (
+                <Typography
+                  component="p"
+                  color={lightGreen?.primary?.dark}
+                  marginBottom={2}
+                >
+                  {thankYouMessage}
+                </Typography>
+              )}
               <Box
                 component={Button}
                 variant="contained"
