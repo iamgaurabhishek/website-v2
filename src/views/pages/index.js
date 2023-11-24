@@ -8,3 +8,4 @@ export { default as Education } from './Education';
 export { default as Research } from './Research';
 export { default as GetStarted } from './GetStarted';
 export { default as Bio } from './Bio';
+export { default as SystemPanel } from './SystemPanel';
