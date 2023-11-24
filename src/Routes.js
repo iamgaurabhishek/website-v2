@@ -21,6 +21,7 @@ import {
   Research as ResearchView,
   GetStarted as GetStartedView,
   Bio as BioView,
+  SystemGPS as SystemGPSView
 } from './views/pages';
 
 // Landing pages
@@ -105,6 +106,22 @@ const Routes = () => {
             title="Bio 2024"
             {...matchProps}
             component={BioView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+
+
+
+
+      <Route
+        exact
+        path="/systems-gps"
+        element={((matchProps) => (
+          <WithLayout
+            title="systems-gps"
+            {...matchProps}
+            component={SystemGPSView}
             layout={BrickMmoLayout}
           />
         ))()}
