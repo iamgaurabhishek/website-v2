@@ -56,6 +56,7 @@ const Hero = () => {
               src="/images/hero/research.png"
               width={'100%'}
               height={'100%'}
+              alt=""
             />
           </Box>
         </Box>

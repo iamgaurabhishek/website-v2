@@ -43,7 +43,12 @@ const Hero = () => {
           alignItems="center"
           maxHeight={600}
         >
-          <img src="/images/hero/commissions.png" width="100%" height="100%" />
+          <img
+            src="/images/hero/commissions.png"
+            width="100%"
+            height="100%"
+            alt=""
+          />
         </Box>
       </Grid>
     </Grid>

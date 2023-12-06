@@ -37,7 +37,7 @@ const Technology = () => {
           width="100%"
         >
           <Box height="100%" width="100%" maxWidth={600}>
-            <img src="images/screens.png" width="100%" />
+            <img src="images/screens.png" width="100%" alt="" />
           </Box>
         </Grid>
         <Grid item xs={12} md={6} container alignItems="center">

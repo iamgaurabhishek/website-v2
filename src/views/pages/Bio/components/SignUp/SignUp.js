@@ -87,7 +87,12 @@ const SignUp = () => {
             width={'100%'}
             maxWidth={{ xs: 500, md: '100%' }}
           >
-            <img src="images/hero/sponsor.png" height={'100%'} width={'100%'} />
+            <img
+              src="images/hero/sponsor.png"
+              height={'100%'}
+              width={'100%'}
+              alt=""
+            />
           </Box>
         </Grid>
         <Grid

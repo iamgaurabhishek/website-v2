@@ -66,6 +66,7 @@ const Systems = () => {
                       <img
                         src={'https://console.codeadam.ca/api/image/' + item}
                         width={20}
+                        alt=""
                       />
                     </Grid>
                   ))}

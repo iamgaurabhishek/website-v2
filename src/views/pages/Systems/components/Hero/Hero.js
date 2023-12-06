@@ -50,7 +50,12 @@ const Hero = () => {
           alignItems={'center'}
         >
           <Box height={'100%'} width={'100%'} maxHeight={600}>
-            <img src="/images/systems.png" width={'100%'} height={'100%'} />
+            <img
+              src="/images/systems.png"
+              width={'100%'}
+              height={'100%'}
+              alt=""
+            />
           </Box>
         </Box>
       </Grid>

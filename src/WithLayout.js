@@ -45,6 +45,7 @@ export const useDarkMode = () => {
 };
 
 export default function WithLayout({
+  // eslint-disable-next-line
   title: title,
   component: Component,
   layout: Layout,

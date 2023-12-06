@@ -11,7 +11,7 @@ const SectionImage = ({ src }) => (
     marginY={2}
     maxWidth={600}
   >
-    <img src={src} height="100%" width="100%" />
+    <img src={src} height="100%" width="100%" alt="" />
   </Box>
 );
 

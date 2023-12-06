@@ -86,6 +86,7 @@ const GetStarted = () => {
                 src="images/coming-soon.png"
                 height={'100%'}
                 width={'100%'}
+                alt=""
               />
             </Box>
           </Grid>
