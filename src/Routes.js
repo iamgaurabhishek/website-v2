@@ -21,7 +21,10 @@ import {
   Research as ResearchView,
   GetStarted as GetStartedView,
   Bio as BioView,
+
+  SystemPanel as SystemPanelView,
   SystemsColours as SystemsColoursView,
+
 } from './views/pages';
 
 // Landing pages
@@ -110,6 +113,21 @@ const Routes = () => {
           />
         ))()}
       />
+
+      <Route
+        exact
+        path="/SystemPanel"
+        element={((matchProps) => (
+          <WithLayout
+            title="System Panel"
+            {...matchProps}
+            component={SystemPanelView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+        
+
       <Route
         exact
         path="/systems-colours"
