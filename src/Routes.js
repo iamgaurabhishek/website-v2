@@ -21,6 +21,7 @@ import {
   Research as ResearchView,
   GetStarted as GetStartedView,
   Bio as BioView,
+  SystemsColours as SystemsColoursView,
 } from './views/pages';
 
 // Landing pages
@@ -105,6 +106,18 @@ const Routes = () => {
             title="Bio 2024"
             {...matchProps}
             component={BioView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/systems-colours"
+        element={((matchProps) => (
+          <WithLayout
+            title="Systems colours"
+            {...matchProps}
+            component={SystemsColoursView}
             layout={BrickMmoLayout}
           />
         ))()}
