@@ -23,7 +23,7 @@ const List = () => {
     <Box>
       <SectionFlag>Commisions</SectionFlag>
       <SectionTitle>Custom Commissioned Projects </SectionTitle>
-      <SectionSubTitle>Check out our current projects:</SectionSubTitle>
+      <SectionSubTitle>Check out our current commissions:</SectionSubTitle>
 
       <Grid container spacing={4} marginTop={3}>
         {commissions.map((item, i) => (

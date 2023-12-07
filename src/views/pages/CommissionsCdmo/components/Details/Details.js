@@ -54,13 +54,13 @@ const Details = () => {
           fontWeight={400}
           marginBottom={2}
         >
-          The build will be displayed at{' '}
+          The CDMO facility will be displayed at{' '}
           <Link component={LinkRouter} to="https://www.bio.org/">
             BIO 2024
-          </Link>
-          , the world's largest largest biotechnology conference attracting more
-          than 16,000 atendees. The build will be used to engage attendees and
-          provide education related to the biologics manufactureing proess.
+          </Link>{' '}
+          (the world's largest largest biotechnology conference attracting more
+          than 16,000 atendees). It will be used to engage attendees and provide
+          education related to the biologics manufactureing proess.
         </Typography>
         <Typography
           component="p"
