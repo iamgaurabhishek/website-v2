@@ -12,6 +12,10 @@ export const commissions = [
     media: 'images/commissions/cdmo.png',
     title: 'Bio 2024',
     subtitle: 'A minifig scale CDMO facility for the Bio 2024 conference!',
+    link: {
+      text: 'Build Details',
+      url: '/commissions-cdmo',
+    },
   },
   {
     media: 'images/commissions/brevisrefero.png',

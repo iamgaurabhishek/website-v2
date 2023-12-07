@@ -41,7 +41,7 @@ const Hero = () => {
       height={'auto'}
       position={'relative'}
       sx={{
-        backgroundImage: 'url("images/commissions/background-humber.jpg")',
+        backgroundImage: 'url("images/commissions/humber-background.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center right',
         backgroundAttachment: 'fixed',
