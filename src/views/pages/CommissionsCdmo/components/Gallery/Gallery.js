@@ -19,17 +19,17 @@ const Gallery = () => {
       cols: 1,
     },
     {
-      src: 'images/commissions/cdmo-windows.png',
+      src: 'images/commissions/cdmo-front.png',
       rows: 1,
       cols: 1,
     },
     {
-      src: 'images/commissions/cdmo-front.png',
+      src: 'images/commissions/cdmo-windows.png',
       rows: 2,
       cols: 2,
     },
     {
-      src: 'images/commissions/cdmo-front.png',
+      src: 'images/commissions/cdmo-modules.png',
       rows: 1,
       cols: 2,
     },
