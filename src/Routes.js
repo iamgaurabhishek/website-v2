@@ -24,6 +24,7 @@ import {
   Research as ResearchView,
   GetStarted as GetStartedView,
   Bio as BioView,
+  //newly added
   contact as ContactView
 } from './views/pages';
 
