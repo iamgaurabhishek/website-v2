@@ -24,6 +24,7 @@ import {
   Research as ResearchView,
   GetStarted as GetStartedView,
   Bio as BioView,
+  contact as ContactView
 } from './views/pages';
 
 const Routes = () => {
@@ -146,6 +147,18 @@ const Routes = () => {
             title="get started"
             {...matchProps}
             component={GetStartedView}
+            layout={BrickMmoLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/contact"
+        element={((matchProps) => (
+          <WithLayout
+            title="contact"
+            {...matchProps}
+            component={ContactView}
             layout={BrickMmoLayout}
           />
         ))()}

@@ -10,3 +10,4 @@ export { default as GetStarted } from './GetStarted';
 export { default as Bio } from './Bio';
 export { default as SystemPanel } from './SystemPanel';
 export { default as SystemsColours } from './SystemsColours';
+export { default as contact } from './contact';

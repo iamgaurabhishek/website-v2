@@ -70,7 +70,7 @@ const List = () => {
         ))}
       </Grid>
 
-      <SectionEndButton text="Request a Build" href="/contact"/>
+      <SectionEndButton text="Request a Build" href="/contact" />
     </Box>
   );
 };

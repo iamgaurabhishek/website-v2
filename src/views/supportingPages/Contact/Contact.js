@@ -15,6 +15,7 @@ const Contact = ({ themeMode = 'light' }) => {
 
   return (
     <Box>
+      Hello World
       <Container>
         <Grid container spacing={isMd ? 8 : 4}>
           <Grid item xs={12} md={6}>
